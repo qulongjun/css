@@ -1,0 +1,1900 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/cssReset.css" />
+		<link rel="stylesheet" type="text/css" href="css/circleDemo.css" />
+	</head>
+
+	<body>
+		<div id="warpper">
+			<div id="container">
+				<div id="nav">
+					<dl>
+						<dt><a href="#introduction">Introduction</a></dt>
+					</dl>
+					<dl>
+						<dt>Demo-圆形图形</dt>
+						<dd><a href="#type1">类型1:边框旋转</a></dd>
+						<dd><a href="#type2">类型2:遮罩飞入</a></dd>
+						<dd><a href="#type3">类型3:遮罩挤入放缩</a></dd>
+						<dd><a href="#type4">类型4:遮罩挤出原图</a></dd>
+						<dd><a href="#type5">类型5:遮罩中线展开</a></dd>
+						<dd><a href="#type6">类型6:同心圆放缩</a></dd>
+						<dd><a href="#type7">类型7:原图缩放替代</a></dd>
+						<dd><a href="#type8">类型8:缩放延时位移</a></dd>
+						<dd><a href="#type9">类型9:水平滚出淡入</a></dd>
+						<dd><a href="#type10">类型10:原图缩小置底</a></dd>
+						<dd><a href="#type11">类型11:翻转显示</a></dd>
+						<dd><a href="#type12">类型12:水平滚入滚出</a></dd>
+						<dd><a href="#type13">类型13:内容滑入</a></dd>
+						<dd><a href="#type14">类型14:旋转切换</a></dd>
+						<dd><a href="#type15">类型15:缩放滚入滚出</a></dd>
+						<dd><a href="#type16">类型16:内容渐显:</a></dd>
+						<dd><a href="#type17">类型17:边框滚出</a></dd>
+						<dd><a href="#type18">类型18:遮罩渐显</a></dd>
+					</dl>
+				</div>
+				<div id="content">
+					<div class="demo" id="introduction">
+						<h2>Introduction</h2>
+						<hr />
+					</div>
+					<br /> 
+					<p>版本V1.0：<br />本页所有特效均是由纯CSS样式实现，通过@media媒体查询实现响应式布局，适应不同分辨率大小的屏幕阅读设备。 兼容性检查结果如下： 在谷歌Chrome(版本45.0.2431.0 )、火狐FireFox(版本39.0.0)、Opera(版本 30.0.1)、IE10及以上浏览器能完美运行，在IE9-浏览器中，不支持部分CSS3属性，特效无法正常显示。 由于 各大浏览器厂商对CSS3的兼容性存在差异，经本人亲测，在部分情况下，使用CSS3样式会有卡顿现象，以及部分情 况下无法触发特效，刷新页面即可恢复。
+					</p>
+					<br />
+					<div class="demo">
+						<h2>圆形类型Demo</h2>
+						<hr />
+					</div>
+					<h3 id="type1">圆形类型一</h3>
+					<div class="circleType ">
+						<ul>
+							<li class="circle1">
+								<div class="imgContainer touch0">
+									<img src="image/circle/1.jpg" />
+									<div class="imgBorder"></div>
+									<div class="info">
+										<h3>Heading Here</h3>
+										<hr />
+										<p>Description goes here</p>
+									</div>
+								</div>
+							</li>
+							<li class="circle2 touch0">
+								<div class="imgContainer">
+									<img src="image/circle/2.jpg" />
+									<div class="imgBorder"></div>
+								</div>
+							</li>
+						</ul>
+						<div class="clearBoth"></div>
+					</div>
+					<h3 id="type2">圆形类型二</h3>
+					<div class="circleType">
+						<ul>
+							<li class="circle3">
+								<div class="imgContainer touch1">
+									<img src="image/circle/3.jpg" />
+									<div class="imgCover"></div>
+									<div class="leftCover">
+										<div class="info">
+											<h3>Heading Here</h3>
+											<hr />
+											<p>Description goes here</p>
+										</div>
+									</div>
+								</div>
+
+							</li>
+							<li class="circle4 ">
+								<div class="imgContainer touch1">
+									<img src="image/circle/4.jpg" />
+									<div class="imgCover"></div>
+									<div class="leftCover"></div>
+								</div>
+							</li>
+							<li class="circle5">
+								<div class="imgContainer touch2">
+									<img src="image/circle/5.jpg" />
+									<div class="imgCover"></div>
+									<div class="rightCover">
+										<div class="info">
+											<h3>Heading Here</h3>
+											<hr />
+											<p>Description goes here</p>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li class="circle6">
+								<div class="imgContainer touch2">
+									<img src="image/circle/6.jpg" />
+									<div class="imgCover"></div>
+									<div class="rightCover">
+									</div>
+								</div>
+							</li>
+							<li class="circle7 ">
+								<div class="imgContainer touch3">
+									<img src="image/circle/7.jpg" />
+									<div class="imgCover"></div>
+									<div class="topCover">
+										<div class="info">
+											<h3>Heading Here</h3>
+											<hr />
+											<p>Description goes here</p>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li class="circle8 ">
+								<div class="imgContainer touch3">
+									<img src="image/circle/8.jpg" />
+									<div class="imgCover"></div>
+									<div class="topCover">
+									</div>
+								</div>
+							</li>
+							<li class="circle9 ">
+								<div class="imgContainer touch4">
+									<img src="image/circle/1.jpg" />
+									<div class="imgCover"></div>
+									<div class="bottomCover">
+										<div class="info">
+											<h3>Heading Here</h3>
+											<hr />
+											<p>Description goes here</p>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li class="circle10 ">
+								<div class="imgContainer touch4">
+									<img src="image/circle/2.jpg" />
+									<div class="imgCover"></div>
+									<div class="bottomCover">
+									</div>
+								</div>
+							</li>
+						</ul>
+						<div class="clearBoth"></div>
+					</div>
+					<h3 id="type3">圆形类型三</h3>
+					<div class="circleType ">
+						<ul>
+							<li class="circle11">
+								<div class="imgContainer touch5">
+									<div class="move">
+										<img src="image/circle/3.jpg" />
+										<div class="imgCover"></div>
+									</div>
+									<div class="leftCover leftColor">
+										<div class="info">
+											<h3>Heading Here</h3>
+											<hr />
+											<p>Description goes here</p>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li class="circle12 ">
+								<div class="imgContainer touch5">
+									<div class="move">
+										<img src="image/circle/4.jpg" />
+										<div class="imgCover"></div>
+									</div>
+									<div class="leftCover rightColor">
+										<div class="info">
+											<h3>Heading Here</h3>
+											<hr />
+											<p>Description goes here</p>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li class="circle13 ">
+								<div class="imgContainer touch6">
+									<div class="move">
+										<img src="image/circle/5.jpg" />
+										<div class="imgCover"></div>
+									</div>
+									<div class="rightCover leftColor">
+										<div class="info">
+											<h3>Heading Here</h3>
+											<hr />
+											<p>Description goes here</p>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li class="circle14 ">
+								<div class="imgContainer touch6">
+									<div class="move">
+										<img src="image/circle/6.jpg" />
+										<div class="imgCover"></div>
+									</div>
+									<div class="rightCover rightColor">
+										<div class="info">
+											<h3>Heading Here</h3>
+											<hr />
+											<p>Description goes here</p>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li class="circle15 ">
+								<div class="imgContainer touch7">
+									<div class="move">
+										<img src="image/circle/7.jpg" />
+										<div class="imgCover"></div>
+									</div>
+									<div class="topCover leftColor">
+										<div class="info">
+											<h3>Heading Here</h3>
+											<hr />
+											<p>Description goes here</p>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li class="circle16 ">
+								<div class="imgContainer touch7">
+									<div class="move">
+										<img src="image/circle/8.jpg" />
+										<div class="imgCover"></div>
+									</div>
+									<div class="topCover rightColor">
+										<div class="info">
+											<h3>Heading Here</h3>
+											<hr />
+											<p>Description goes here</p>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li class="circle17 ">
+								<div class="imgContainer touch8">
+									<div class="move">
+										<img src="image/circle/1.jpg" />
+										<div class="imgCover"></div>
+									</div>
+									<div class="bottomCover leftColor">
+										<div class="info">
+											<h3>Heading Here</h3>
+											<hr />
+											<p>Description goes here</p>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li class="circle18 ">
+								<div class="imgContainer touch8">
+									<div class="move">
+										<img src="image/circle/2.jpg" />
+										<div class="imgCover"></div>
+									</div>
+									<div class="bottomCover rightColor">
+										<div class="info">
+											<h3>Heading Here</h3>
+											<hr />
+											<p>Description goes here</p>
+										</div>
+									</div>
+								</div>
+							</li>
+						</ul>
+						<div class="clearBoth"></div>
+					</div>
+					<h3 id="type4">圆形类型四</h3>
+					<div class="circleType ">
+						<ul>
+							<li class="circle19">
+								<div class="imgContainer touch9">
+									<div class="move">
+										<img src="image/circle/3.jpg" />
+										<div class="imgCover"></div>
+									</div>
+									<div class="leftCover leftColor">
+
+										<div class="info">
+											<h3>Heading Here</h3>
+											<hr />
+											<p>Description goes here</p>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li class="circle20">
+								<div class="imgContainer touch9">
+									<div class="move">
+										<img src="image/circle/4.jpg" />
+										<div class="imgCover"></div>
+									</div>
+									<div class="leftCover rightColor">
+										<div class="info">
+											<h3>Heading Here</h3>
+											<hr />
+											<p>Description goes here</p>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li class="circle21">
+								<div class="imgContainer touch10">
+									<div class="move">
+										<img src="image/circle/5.jpg" />
+										<div class="imgCover"></div>
+									</div>
+									<div class="rightCover leftColor">
+										<div class="info">
+											<h3>Heading Here</h3>
+											<hr />
+											<p>Description goes here</p>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li class="circle22">
+								<div class="imgContainer touch10">
+									<div class="move">
+										<img src="image/circle/6.jpg" />
+										<div class="imgCover"></div>
+									</div>
+									<div class="rightCover rightColor">
+										<div class="info">
+											<h3>Heading Here</h3>
+											<hr />
+											<p>Description goes here</p>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li class="circle23">
+								<div class="imgContainer touch11">
+									<div class="move">
+										<img src="image/circle/7.jpg" />
+										<div class="imgCover"></div>
+									</div>
+									<div class="topCover leftColor">
+										<div class="info">
+											<h3>Heading Here</h3>
+											<hr />
+											<p>Description goes here</p>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li class="circle24">
+								<div class="imgContainer touch11">
+									<div class="move">
+										<img src="image/circle/8.jpg" />
+										<div class="imgCover"></div>
+									</div>
+									<div class="topCover rightColor">
+										<div class="info">
+											<h3>Heading Here</h3>
+											<hr />
+											<p>Description goes here</p>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li class="circle25">
+								<div class="imgContainer touch12">
+									<div class="move">
+										<img src="image/circle/1.jpg" />
+										<div class="imgCover"></div>
+									</div>
+									<div class="bottomCover leftColor">
+										<div class="info">
+											<h3>Heading Here</h3>
+											<hr />
+											<p>Description goes here</p>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li class="circle26">
+								<div class="imgContainer touch12">
+									<div class="move">
+										<img src="image/circle/2.jpg" />
+										<div class="imgCover"></div>
+									</div>
+									<div class="bottomCover rightColor">
+										<div class="info">
+											<h3>Heading Here</h3>
+											<hr />
+											<p>Description goes here</p>
+										</div>
+									</div>
+								</div>
+							</li>
+						</ul>
+						<div class="clearBoth"></div>
+					</div>
+					<h3 id="type5">圆形类型五</h3>
+					<div class="circleType ">
+						<ul>
+							<li class="circle27">
+								<div class="imgContainer touch13">
+									<div class="move">
+										<img src="image/circle/6.jpg" />
+										<div class="imgCover"></div>
+									</div>
+									<div class="selfCover leftSelfColor">
+										<div class="info">
+											<h3>Heading Here</h3>
+											<hr />
+											<p>Description goes here</p>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li class="circle28">
+								<div class="imgContainer touch13">
+									<div class="move">
+										<img src="image/circle/4.jpg" />
+										<div class="imgCover"></div>
+									</div>
+									<div class="selfCover rightSelfColor">
+										<div class="info">
+											<h3>Heading Here</h3>
+											<hr />
+											<p>Description goes here</p>
+										</div>
+									</div>
+								</div>
+							</li>
+						</ul>
+						<div class="clearBoth"></div>
+					</div>
+					<h3 id="type6">圆形类型六</h3>
+					<div class="circleType ">
+						<ul>
+							<li class="circle29">
+								<div class="imgContainer touch14">
+									<div class="move">
+										<img src="image/circle/7.jpg" />
+										<div class="imgCover"></div>
+									</div>
+									<div class="selfCover leftSelfColor">
+										<div class="info">
+											<h3>Heading Here</h3>
+											<hr />
+											<p>Description goes here</p>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li class="circle30">
+								<div class="imgContainer touch14">
+									<div class="move">
+										<img src="image/circle/8.jpg" />
+										<div class="imgCover"></div>
+									</div>
+									<div class="selfCover rightSelfColor">
+										<div class="info">
+											<h3>Heading Here</h3>
+											<hr />
+											<p>Description goes here</p>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li class="circle31">
+								<div class="imgContainer touch15">
+									<div class="move">
+										<img src="image/circle/1.jpg" />
+										<div class="imgCover"></div>
+									</div>
+									<div class="selfCover leftSelfColor">
+										<div class="info">
+											<h3>Heading Here</h3>
+											<hr />
+											<p>Description goes here</p>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li class="circle32">
+								<div class="imgContainer touch15">
+									<div class="move">
+										<img src="image/circle/2.jpg" />
+										<div class="imgCover"></div>
+									</div>
+									<div class="selfCover rightSelfColor">
+										<div class="info">
+											<h3>Heading Here</h3>
+											<hr />
+											<p>Description goes here</p>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li class="circle33">
+								<div class="imgContainer touch16">
+									<div class="move">
+										<img src="image/circle/3.jpg" />
+										<div class="imgCover"></div>
+									</div>
+									<div class="selfCover leftSelfColor">
+										<div class="info">
+											<h3>Heading Here</h3>
+											<hr />
+											<p>Description goes here</p>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li class="circle34">
+								<div class="imgContainer touch16">
+									<div class="move">
+										<img src="image/circle/4.jpg" />
+										<div class="imgCover"></div>
+									</div>
+									<div class="selfCover rightSelfColor">
+										<div class="info">
+											<h3>Heading Here</h3>
+											<hr />
+											<p>Description goes here</p>
+										</div>
+									</div>
+								</div>
+							</li>
+						</ul>
+						<div class="clearBoth"></div>
+					</div>
+					<h3 id="type7">圆形类型七</h3>
+					<div class="circleType ">
+						<ul>
+							<li class="circle35">
+								<div class="imgContainer touch17">
+									<div class="move">
+										<img src="image/circle/5.jpg" />
+										<div class="imgCover"></div>
+									</div>
+									<div class="leftCover leftSelfColor">
+										<div class="info">
+											<h3>Heading Here</h3>
+											<hr />
+											<p>Description goes here</p>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li class="circle36">
+								<div class="imgContainer touch17">
+									<div class="move">
+										<img src="image/circle/6.jpg" />
+										<div class="imgCover"></div>
+									</div>
+									<div class="leftCover rightSelfColor">
+										<div class="info">
+											<h3>Heading Here</h3>
+											<hr />
+											<p>Description goes here</p>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li class="circle37">
+								<div class="imgContainer touch18">
+									<div class="move">
+										<img src="image/circle/7.jpg" />
+										<div class="imgCover"></div>
+									</div>
+									<div class="rightCover leftSelfColor">
+										<div class="info">
+											<h3>Heading Here</h3>
+											<hr />
+											<p>Description goes here</p>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li class="circle38">
+								<div class="imgContainer touch18">
+									<div class="move">
+										<img src="image/circle/8.jpg" />
+										<div class="imgCover"></div>
+									</div>
+									<div class="rightCover rightSelfColor">
+										<div class="info">
+											<h3>Heading Here</h3>
+											<hr />
+											<p>Description goes here</p>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li class="circle39">
+								<div class="imgContainer touch19">
+									<div class="move">
+										<img src="image/circle/1.jpg" />
+										<div class="imgCover"></div>
+									</div>
+									<div class="topCover leftSelfColor">
+										<div class="info">
+											<h3>Heading Here</h3>
+											<hr />
+											<p>Description goes here</p>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li class="circle40">
+								<div class="imgContainer touch19">
+									<div class="move">
+										<img src="image/circle/2.jpg" />
+										<div class="imgCover"></div>
+									</div>
+									<div class="topCover rightSelfColor">
+										<div class="info">
+											<h3>Heading Here</h3>
+											<hr />
+											<p>Description goes here</p>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li class="circle41">
+								<div class="imgContainer touch20">
+									<div class="move">
+										<img src="image/circle/3.jpg" />
+										<div class="imgCover"></div>
+									</div>
+									<div class="bottomCover leftSelfColor">
+										<div class="info">
+											<h3>Heading Here</h3>
+											<hr />
+											<p>Description goes here</p>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li class="circle42">
+								<div class="imgContainer touch20">
+									<div class="move">
+										<img src="image/circle/4.jpg" />
+										<div class="imgCover"></div>
+									</div>
+									<div class="bottomCover rightSelfColor">
+										<div class="info">
+											<h3>Heading Here</h3>
+											<hr />
+											<p>Description goes here</p>
+										</div>
+									</div>
+								</div>
+							</li>
+						</ul>
+						<div class="clearBoth"></div>
+					</div>
+					<h3 id="type8">圆形类型八</h3>
+					<div class="circleType ">
+						<ul>
+							<li class="circle43">
+								<div class="imgContainer touch21">
+									<div class="move">
+										<img src="image/circle/5.jpg" />
+										<div class="imgCover"></div>
+									</div>
+									<div class="leftCover leftSelfColor">
+										<div class="info">
+											<h3>Heading Here</h3>
+											<hr />
+											<p>Description goes here</p>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li class="circle44">
+								<div class="imgContainer touch21">
+									<div class="move">
+										<img src="image/circle/6.jpg" />
+										<div class="imgCover"></div>
+									</div>
+									<div class="leftCover rightSelfColor">
+										<div class="info">
+											<h3>Heading Here</h3>
+											<hr />
+											<p>Description goes here</p>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li class="circle45">
+								<div class="imgContainer touch22">
+									<div class="move">
+										<img src="image/circle/7.jpg" />
+										<div class="imgCover"></div>
+									</div>
+									<div class="rightCover leftSelfColor">
+										<div class="info">
+											<h3>Heading Here</h3>
+											<hr />
+											<p>Description goes here</p>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li class="circle46">
+								<div class="imgContainer touch22">
+									<div class="move">
+										<img src="image/circle/8.jpg" />
+										<div class="imgCover"></div>
+									</div>
+									<div class="rightCover rightSelfColor">
+										<div class="info">
+											<h3>Heading Here</h3>
+											<hr />
+											<p>Description goes here</p>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li class="circle47">
+								<div class="imgContainer touch23">
+									<div class="move">
+										<img src="image/circle/1.jpg" />
+										<div class="imgCover"></div>
+									</div>
+									<div class="topCover leftSelfColor">
+										<div class="info">
+											<h3>Heading Here</h3>
+											<hr />
+											<p>Description goes here</p>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li class="circle48">
+								<div class="imgContainer touch23">
+									<div class="move">
+										<img src="image/circle/2.jpg" />
+										<div class="imgCover"></div>
+									</div>
+									<div class="topCover rightSelfColor">
+										<div class="info">
+											<h3>Heading Here</h3>
+											<hr />
+											<p>Description goes here</p>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li class="circle49">
+								<div class="imgContainer touch24">
+									<div class="move">
+										<img src="image/circle/3.jpg" />
+										<div class="imgCover"></div>
+									</div>
+									<div class="bottomCover leftSelfColor">
+										<div class="info">
+											<h3>Heading Here</h3>
+											<hr />
+											<p>Description goes here</p>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li class="circle50">
+								<div class="imgContainer touch24">
+									<div class="move">
+										<img src="image/circle/4.jpg" />
+										<div class="imgCover"></div>
+									</div>
+									<div class="bottomCover rightSelfColor">
+										<div class="info">
+											<h3>Heading Here</h3>
+											<hr />
+											<p>Description goes here</p>
+										</div>
+									</div>
+								</div>
+							</li>
+						</ul>
+						<div class="clearBoth"></div>
+					</div>
+					<h3 id="type9">圆形类型九</h3>
+					<div class="circleType ">
+						<ul>
+							<li class="circle51">
+								<div class="imgContainer touch25">
+									<div class="move">
+										<img src="image/circle/5.jpg" />
+										<div class="imgCover"></div>
+									</div>
+									<div class="selfCover leftSelfColor">
+										<div class="info">
+											<h3>Heading Here</h3>
+											<hr />
+											<p>Description goes here</p>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li class="circle52">
+								<div class="imgContainer touch25">
+									<div class="move">
+										<img src="image/circle/6.jpg" />
+										<div class="imgCover"></div>
+									</div>
+									<div class="selfCover rightSelfColor">
+										<div class="info">
+											<h3>Heading Here</h3>
+											<hr />
+											<p>Description goes here</p>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li class="circle53">
+								<div class="imgContainer touch26">
+									<div class="move">
+										<img src="image/circle/7.jpg" />
+										<div class="imgCover"></div>
+									</div>
+									<div class="selfCover leftSelfColor">
+										<div class="info">
+											<h3>Heading Here</h3>
+											<hr />
+											<p>Description goes here</p>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li class="circle54">
+								<div class="imgContainer touch26">
+									<div class="move">
+										<img src="image/circle/8.jpg" />
+										<div class="imgCover"></div>
+									</div>
+									<div class="selfCover rightSelfColor">
+										<div class="info">
+											<h3>Heading Here</h3>
+											<hr />
+											<p>Description goes here</p>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li class="circle55">
+								<div class="imgContainer touch27">
+									<div class="move">
+										<img src="image/circle/1.jpg" />
+										<div class="imgCover"></div>
+									</div>
+									<div class="selfCover leftSelfColor">
+										<div class="info">
+											<h3>Heading Here</h3>
+											<hr />
+											<p>Description goes here</p>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li class="circle56">
+								<div class="imgContainer touch27">
+									<div class="move">
+										<img src="image/circle/2.jpg" />
+										<div class="imgCover"></div>
+									</div>
+									<div class="selfCover rightSelfColor">
+										<div class="info">
+											<h3>Heading Here</h3>
+											<hr />
+											<p>Description goes here</p>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li class="circle57">
+								<div class="imgContainer touch28">
+									<div class="move">
+										<img src="image/circle/3.jpg" />
+										<div class="imgCover"></div>
+									</div>
+									<div class="selfCover leftSelfColor">
+										<div class="info">
+											<h3>Heading Here</h3>
+											<hr />
+											<p>Description goes here</p>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li class="circle58">
+								<div class="imgContainer touch28">
+									<div class="move">
+										<img src="image/circle/4.jpg" />
+										<div class="imgCover"></div>
+									</div>
+									<div class="selfCover rightSelfColor">
+										<div class="info">
+											<h3>Heading Here</h3>
+											<hr />
+											<p>Description goes here</p>
+										</div>
+									</div>
+								</div>
+							</li>
+						</ul>
+						<div class="clearBoth"></div>
+					</div>
+					<h3 id="type10">圆形类型十</h3>
+					<div class="circleType ">
+						<ul>
+							<li class="circle59">
+								<div class="imgContainer touch29">
+									<div class="move">
+										<img src="image/circle/5.jpg" />
+										<div class="imgCover"></div>
+									</div>
+									<div class="selfCover leftSelfColor">
+										<div class="info">
+											<h3>Heading Here</h3>
+											<hr />
+											<p>Description goes here</p>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li class="circle60">
+								<div class="imgContainer touch29">
+									<div class="move">
+										<img src="image/circle/6.jpg" />
+										<div class="imgCover"></div>
+									</div>
+									<div class="selfCover rightSelfColor">
+										<div class="info">
+											<h3>Heading Here</h3>
+											<hr />
+											<p>Description goes here</p>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li class="circle61">
+								<div class="imgContainer touch30">
+									<div class="move">
+										<img src="image/circle/7.jpg" />
+										<div class="imgCover"></div>
+									</div>
+									<div class="selfCover leftSelfColor">
+										<div class="info">
+											<h3>Heading Here</h3>
+											<hr />
+											<p>Description goes here</p>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li class="circle62">
+								<div class="imgContainer touch30">
+									<div class="move">
+										<img src="image/circle/8.jpg" />
+										<div class="imgCover"></div>
+									</div>
+									<div class="selfCover rightSelfColor">
+										<div class="info">
+											<h3>Heading Here</h3>
+											<hr />
+											<p>Description goes here</p>
+										</div>
+									</div>
+								</div>
+							</li>
+
+							<li class="circle63">
+								<div class="imgContainer touch31">
+									<div class="move">
+										<img src="image/circle/1.jpg" />
+										<div class="imgCover"></div>
+									</div>
+									<div class="selfCover leftSelfColor">
+										<div class="info">
+											<h3>Heading Here</h3>
+											<hr />
+											<p>Description goes here</p>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li class="circle64">
+								<div class="imgContainer touch31">
+									<div class="move">
+										<img src="image/circle/2.jpg" />
+										<div class="imgCover"></div>
+									</div>
+									<div class="selfCover rightSelfColor">
+										<div class="info">
+											<h3>Heading Here</h3>
+											<hr />
+											<p>Description goes here</p>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li class="circle65">
+								<div class="imgContainer touch32">
+									<div class="move">
+										<img src="image/circle/3.jpg" />
+										<div class="imgCover"></div>
+									</div>
+									<div class="selfCover leftSelfColor">
+										<div class="info">
+											<h3>Heading Here</h3>
+											<hr />
+											<p>Description goes here</p>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li class="circle66">
+								<div class="imgContainer touch32">
+									<div class="move">
+										<img src="image/circle/4.jpg" />
+										<div class="imgCover"></div>
+									</div>
+									<div class="selfCover rightSelfColor">
+										<div class="info">
+											<h3>Heading Here</h3>
+											<hr />
+											<p>Description goes here</p>
+										</div>
+									</div>
+								</div>
+							</li>
+						</ul>
+						<div class="clearBoth"></div>
+					</div>
+					<h3 id="type11">圆形类型十一</h3>
+					<div class="circleType ">
+						<ul>
+							<li class="circle59">
+								<div class="imgContainer touch33">
+									<div class="move">
+										<img src="image/circle/5.jpg" />
+										<div class="imgCover"></div>
+									</div>
+									<div class="selfCover leftSelfColor">
+										<div class="info">
+											<h3>Heading Here</h3>
+											<hr />
+											<p>Description goes here</p>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li class="circle60">
+								<div class="imgContainer touch33">
+									<div class="move">
+										<img src="image/circle/6.jpg" />
+										<div class="imgCover"></div>
+									</div>
+									<div class="selfCover rightSelfColor">
+										<div class="info">
+											<h3>Heading Here</h3>
+											<hr />
+											<p>Description goes here</p>
+										</div>
+									</div>
+								</div>
+							</li>
+
+							<li class="circle61">
+								<div class="imgContainer touch34">
+									<div class="move">
+										<img src="image/circle/7.jpg" />
+										<div class="imgCover"></div>
+									</div>
+									<div class="selfCover leftSelfColor">
+										<div class="info">
+											<h3>Heading Here</h3>
+											<hr />
+											<p>Description goes here</p>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li class="circle62">
+								<div class="imgContainer touch34">
+									<div class="move">
+										<img src="image/circle/8.jpg" />
+										<div class="imgCover"></div>
+									</div>
+									<div class="selfCover rightSelfColor">
+										<div class="info">
+											<h3>Heading Here</h3>
+											<hr />
+											<p>Description goes here</p>
+										</div>
+									</div>
+								</div>
+							</li>
+
+							<li class="circle63">
+								<div class="imgContainer touch35">
+									<div class="move">
+										<img src="image/circle/1.jpg" />
+										<div class="imgCover"></div>
+									</div>
+									<div class="selfCover leftSelfColor">
+										<div class="info">
+											<h3>Heading Here</h3>
+											<hr />
+											<p>Description goes here</p>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li class="circle64">
+								<div class="imgContainer touch35">
+									<div class="move">
+										<img src="image/circle/2.jpg" />
+										<div class="imgCover"></div>
+									</div>
+									<div class="selfCover rightSelfColor">
+										<div class="info">
+											<h3>Heading Here</h3>
+											<hr />
+											<p>Description goes here</p>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li class="circle65">
+								<div class="imgContainer touch36">
+									<div class="move">
+										<img src="image/circle/3.jpg" />
+										<div class="imgCover"></div>
+									</div>
+									<div class="selfCover leftSelfColor">
+										<div class="info">
+											<h3>Heading Here</h3>
+											<hr />
+											<p>Description goes here</p>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li class="circle66">
+								<div class="imgContainer touch36">
+									<div class="move">
+										<img src="image/circle/4.jpg" />
+										<div class="imgCover"></div>
+									</div>
+									<div class="selfCover rightSelfColor">
+										<div class="info">
+											<h3>Heading Here</h3>
+											<hr />
+											<p>Description goes here</p>
+										</div>
+									</div>
+								</div>
+							</li>
+						</ul>
+						<div class="clearBoth"></div>
+					</div>
+					<h3 id="type12">圆形类型十二</h3>
+					<div class="circleType ">
+						<ul>
+							<li class="circle67">
+								<div class="imgContainer touch37">
+									<div class="move">
+										<img src="image/circle/5.jpg" />
+										<div class="imgCover"></div>
+									</div>
+									<div class="rightCover leftSelfColor">
+										<div class="info">
+											<h3>Heading Here</h3>
+											<hr />
+											<p>Description goes here</p>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li class="circle68">
+								<div class="imgContainer touch37">
+									<div class="move">
+										<img src="image/circle/6.jpg" />
+										<div class="imgCover"></div>
+									</div>
+									<div class="rightCover rightSelfColor">
+										<div class="info">
+											<h3>Heading Here</h3>
+											<hr />
+											<p>Description goes here</p>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li class="circle69">
+								<div class="imgContainer touch38">
+									<div class="move">
+										<img src="image/circle/7.jpg" />
+										<div class="imgCover"></div>
+									</div>
+									<div class="leftCover leftSelfColor">
+										<div class="info">
+											<h3>Heading Here</h3>
+											<hr />
+											<p>Description goes here</p>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li class="circle70">
+								<div class="imgContainer touch38">
+									<div class="move">
+										<img src="image/circle/8.jpg" />
+										<div class="imgCover"></div>
+									</div>
+									<div class="leftCover rightSelfColor">
+										<div class="info">
+											<h3>Heading Here</h3>
+											<hr />
+											<p>Description goes here</p>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li class="circle71">
+								<div class="imgContainer touch39">
+									<div class="move">
+										<img src="image/circle/1.jpg" />
+										<div class="imgCover"></div>
+									</div>
+									<div class="bottomCover leftSelfColor">
+										<div class="info">
+											<h3>Heading Here</h3>
+											<hr />
+											<p>Description goes here</p>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li class="circle72">
+								<div class="imgContainer touch39">
+									<div class="move">
+										<img src="image/circle/2.jpg" />
+										<div class="imgCover"></div>
+									</div>
+									<div class="bottomCover rightSelfColor">
+										<div class="info">
+											<h3>Heading Here</h3>
+											<hr />
+											<p>Description goes here</p>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li class="circle73">
+								<div class="imgContainer touch40">
+									<div class="move">
+										<img src="image/circle/3.jpg" />
+										<div class="imgCover"></div>
+									</div>
+									<div class="topCover leftSelfColor">
+										<div class="info">
+											<h3>Heading Here</h3>
+											<hr />
+											<p>Description goes here</p>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li class="circle74">
+								<div class="imgContainer touch40">
+									<div class="move">
+										<img src="image/circle/4.jpg" />
+										<div class="imgCover"></div>
+									</div>
+									<div class="topCover rightSelfColor">
+										<div class="info">
+											<h3>Heading Here</h3>
+											<hr />
+											<p>Description goes here</p>
+										</div>
+									</div>
+								</div>
+							</li>
+						</ul>
+						<div class="clearBoth"></div>
+					</div>
+					<h3 id="type13">圆形类型十三</h3>
+					<div class="circleType">
+						<ul>
+							<li class="circle75">
+								<div class="imgContainer touch41">
+									<div class="move">
+										<img src="image/circle/5.jpg" />
+										<div class="imgCover"></div>
+									</div>
+									<div class="selfCover leftSelfColor">
+										<div class="info">
+											<h3>Heading Here</h3>
+											<hr />
+											<p>Description goes here</p>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li class="circle76">
+								<div class="imgContainer touch41">
+									<div class="move">
+										<img src="image/circle/6.jpg" />
+										<div class="imgCover"></div>
+									</div>
+									<div class="selfCover rightSelfColor">
+										<div class="info">
+											<h3>Heading Here</h3>
+											<hr />
+											<p>Description goes here</p>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li class="circle77">
+								<div class="imgContainer touch42">
+									<div class="move">
+										<img src="image/circle/7.jpg" />
+										<div class="imgCover"></div>
+									</div>
+									<div class="selfCover leftSelfColor">
+										<div class="info">
+											<h3>Heading Here</h3>
+											<hr />
+											<p>Description goes here</p>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li class="circle78">
+								<div class="imgContainer touch42">
+									<div class="move">
+										<img src="image/circle/8.jpg" />
+										<div class="imgCover"></div>
+									</div>
+									<div class="selfCover rightSelfColor">
+										<div class="info">
+											<h3>Heading Here</h3>
+											<hr />
+											<p>Description goes here</p>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li class="circle79">
+								<div class="imgContainer touch43">
+									<div class="move">
+										<img src="image/circle/1.jpg" />
+										<div class="imgCover"></div>
+									</div>
+									<div class="selfCover leftSelfColor">
+										<div class="info">
+											<h3>Heading Here</h3>
+											<hr />
+											<p>Description goes here</p>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li class="circle80">
+								<div class="imgContainer touch43">
+									<div class="move">
+										<img src="image/circle/2.jpg" />
+										<div class="imgCover"></div>
+									</div>
+									<div class="selfCover rightSelfColor">
+										<div class="info">
+											<h3>Heading Here</h3>
+											<hr />
+											<p>Description goes here</p>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li class="circle81">
+								<div class="imgContainer touch44">
+									<div class="move">
+										<img src="image/circle/3.jpg" />
+										<div class="imgCover"></div>
+									</div>
+									<div class="selfCover leftSelfColor">
+										<div class="info">
+											<h3>Heading Here</h3>
+											<hr />
+											<p>Description goes here</p>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li class="circle82">
+								<div class="imgContainer touch44">
+									<div class="move">
+										<img src="image/circle/4.jpg" />
+										<div class="imgCover"></div>
+									</div>
+									<div class="selfCover rightSelfColor">
+										<div class="info">
+											<h3>Heading Here</h3>
+											<hr />
+											<p>Description goes here</p>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li class="circle83">
+								<div class="imgContainer touch45">
+									<div class="move">
+										<img src="image/circle/5.jpg" />
+										<div class="imgCover"></div>
+									</div>
+									<div class="selfCover leftSelfColor">
+										<div class="info">
+											<h3>Heading Here</h3>
+											<hr />
+											<p>Description goes here</p>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li class="circle84">
+								<div class="imgContainer touch45">
+									<div class="move">
+										<img src="image/circle/6.jpg" />
+										<div class="imgCover"></div>
+									</div>
+									<div class="selfCover rightSelfColor">
+										<div class="info">
+											<h3>Heading Here</h3>
+											<hr />
+											<p>Description goes here</p>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li class="circle85">
+								<div class="imgContainer touch46">
+									<div class="move">
+										<img src="image/circle/7.jpg" />
+										<div class="imgCover"></div>
+									</div>
+									<div class="selfCover leftSelfColor">
+										<div class="info">
+											<h3>Heading Here</h3>
+											<hr />
+											<p>Description goes here</p>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li class="circle86">
+								<div class="imgContainer touch46">
+									<div class="move">
+										<img src="image/circle/8.jpg" />
+										<div class="imgCover"></div>
+									</div>
+									<div class="selfCover rightSelfColor">
+										<div class="info">
+											<h3>Heading Here</h3>
+											<hr />
+											<p>Description goes here</p>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li class="circle87">
+								<div class="imgContainer touch47">
+									<div class="move">
+										<img src="image/circle/1.jpg" />
+										<div class="imgCover"></div>
+									</div>
+									<div class="selfCover leftSelfColor">
+										<div class="info">
+											<h3>Heading Here</h3>
+											<hr />
+											<p>Description goes here</p>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li class="circle88">
+								<div class="imgContainer touch47">
+									<div class="move">
+										<img src="image/circle/2.jpg" />
+										<div class="imgCover"></div>
+									</div>
+									<div class="selfCover rightSelfColor">
+										<div class="info">
+											<h3>Heading Here</h3>
+											<hr />
+											<p>Description goes here</p>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li class="circle89">
+								<div class="imgContainer touch48">
+									<div class="move">
+										<img src="image/circle/3.jpg" />
+										<div class="imgCover"></div>
+									</div>
+									<div class="selfCover leftSelfColor">
+										<div class="info">
+											<h3>Heading Here</h3>
+											<hr />
+											<p>Description goes here</p>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li class="circle90">
+								<div class="imgContainer touch48">
+									<div class="move">
+										<img src="image/circle/4.jpg" />
+										<div class="imgCover"></div>
+									</div>
+									<div class="selfCover rightSelfColor">
+										<div class="info">
+											<h3>Heading Here</h3>
+											<hr />
+											<p>Description goes here</p>
+										</div>
+									</div>
+								</div>
+							</li>
+						</ul>
+						<div class="clearBoth"></div>
+					</div>
+
+					<h3 id="type14">圆形类型十四</h3>
+					<div class="circleType ">
+						<ul>
+							<li class="circle91">
+								<div class="imgContainer touch49">
+									<div class="move">
+										<img src="image/circle/5.jpg" />
+										<div class="imgCover"></div>
+									</div>
+									<div class="selfCover leftSelfColor">
+										<div class="info">
+											<h3>Heading Here</h3>
+											<hr />
+											<p>Description goes here</p>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li class="circle92">
+								<div class="imgContainer touch50">
+									<div class="move">
+										<img src="image/circle/6.jpg" />
+										<div class="imgCover"></div>
+									</div>
+									<div class="selfCover rightSelfColor">
+										<div class="info">
+											<h3>Heading Here</h3>
+											<hr />
+											<p>Description goes here</p>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li class="circle93">
+								<div class="imgContainer touch51">
+									<div class="move">
+										<img src="image/circle/7.jpg" />
+										<div class="imgCover"></div>
+									</div>
+									<div class="selfCover leftSelfColor">
+										<div class="info">
+											<h3>Heading Here</h3>
+											<hr />
+											<p>Description goes here</p>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li class="circle94">
+								<div class="imgContainer touch52">
+									<div class="move">
+										<img src="image/circle/8.jpg" />
+										<div class="imgCover"></div>
+									</div>
+									<div class="selfCover rightSelfColor">
+										<div class="info">
+											<h3>Heading Here</h3>
+											<hr />
+											<p>Description goes here</p>
+										</div>
+									</div>
+								</div>
+							</li>
+
+						</ul>
+						<div class="clearBoth"></div>
+					</div>
+
+					<h3 id="type15">圆形类型十五</h3>
+					<div class="circleType ">
+						<ul>
+							<li class="circle95">
+								<div class="imgContainer touch53">
+									<div class="move">
+										<img src="image/circle/1.jpg" />
+										<div class="imgCover"></div>
+									</div>
+									<div class="selfCover leftSelfColor">
+										<div class="info">
+											<h3>Heading Here</h3>
+											<hr />
+											<p>Description goes here</p>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li class="circle96">
+								<div class="imgContainer touch54">
+									<div class="move">
+										<img src="image/circle/2.jpg" />
+										<div class="imgCover"></div>
+									</div>
+									<div class="selfCover rightSelfColor">
+										<div class="info">
+											<h3>Heading Here</h3>
+											<hr />
+											<p>Description goes here</p>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li class="circle97">
+								<div class="imgContainer touch55">
+									<div class="move">
+										<img src="image/circle/3.jpg" />
+										<div class="imgCover"></div>
+									</div>
+									<div class="selfCover leftSelfColor">
+										<div class="info">
+											<h3>Heading Here</h3>
+											<hr />
+											<p>Description goes here</p>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li class="circle98">
+								<div class="imgContainer touch56">
+									<div class="move">
+										<img src="image/circle/4.jpg" />
+										<div class="imgCover"></div>
+									</div>
+									<div class="selfCover rightSelfColor">
+										<div class="info">
+											<h3>Heading Here</h3>
+											<hr />
+											<p>Description goes here</p>
+										</div>
+									</div>
+								</div>
+							</li>
+
+						</ul>
+						<div class="clearBoth"></div>
+					</div>
+
+					<h3 id="type16">圆形类型十六</h3>
+					<div class="circleType ">
+						<ul>
+							<li class="circle99">
+								<div class="imgContainer touch57">
+									<div class="move">
+										<img src="image/circle/5.jpg" />
+										<div class="imgCover"></div>
+									</div>
+									<div class="selfCover leftSelfColor">
+										<div class="info">
+											<h3>Heading Here</h3>
+											<hr />
+											<p>Description goes here</p>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li class="circle100">
+								<div class="imgContainer touch57">
+									<div class="move">
+										<img src="image/circle/6.jpg" />
+										<div class="imgCover"></div>
+									</div>
+									<div class="selfCover rightSelfColor">
+										<div class="info">
+											<h3>Heading Here</h3>
+											<hr />
+											<p>Description goes here</p>
+										</div>
+									</div>
+								</div>
+							</li>
+						</ul>
+						<div class="clearBoth"></div>
+					</div>
+
+					<h3 id="type17">圆形类型十七</h3>
+					<div class="circleType ">
+						<ul>
+							<li class="circle101">
+								<div class="imgContainer touch58">
+									<div class="move">
+										<img src="image/circle/7.jpg" />
+										<div class="imgCover"></div>
+									</div>
+									<div class="selfCover leftSelfColor">
+										<div class="info">
+											<h3>Heading Here</h3>
+											<hr />
+											<p>Description goes here</p>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li class="circle102">
+								<div class="imgContainer touch59">
+									<div class="move">
+										<img src="image/circle/8.jpg" />
+										<div class="imgCover"></div>
+									</div>
+									<div class="selfCover rightSelfColor">
+										<div class="info">
+											<h3>Heading Here</h3>
+											<hr />
+											<p>Description goes here</p>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li class="circle103">
+								<div class="imgContainer touch60">
+									<div class="move">
+										<img src="image/circle/1.jpg" />
+										<div class="imgCover"></div>
+									</div>
+									<div class="selfCover leftSelfColor">
+										<div class="info">
+											<h3>Heading Here</h3>
+											<hr />
+											<p>Description goes here</p>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li class="circle104">
+								<div class="imgContainer touch61">
+									<div class="move">
+										<img src="image/circle/2.jpg" />
+										<div class="imgCover"></div>
+									</div>
+									<div class="selfCover rightSelfColor">
+										<div class="info">
+											<h3>Heading Here</h3>
+											<hr />
+											<p>Description goes here</p>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li class="circle105">
+								<div class="imgContainer touch62">
+									<div class="move">
+										<img src="image/circle/3.jpg" />
+										<div class="imgCover"></div>
+									</div>
+									<div class="selfCover leftSelfColor">
+										<div class="info">
+											<h3>Heading Here</h3>
+											<hr />
+											<p>Description goes here</p>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li class="circle106">
+								<div class="imgContainer touch63">
+									<div class="move">
+										<img src="image/circle/4.jpg" />
+										<div class="imgCover"></div>
+									</div>
+									<div class="selfCover rightSelfColor">
+										<div class="info">
+											<h3>Heading Here</h3>
+											<hr />
+											<p>Description goes here</p>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li class="circle107">
+								<div class="imgContainer touch64">
+									<div class="move">
+										<img src="image/circle/5.jpg" />
+										<div class="imgCover"></div>
+									</div>
+									<div class="selfCover leftSelfColor">
+										<div class="info">
+											<h3>Heading Here</h3>
+											<hr />
+											<p>Description goes here</p>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li class="circle108">
+								<div class="imgContainer touch65">
+									<div class="move">
+										<img src="image/circle/6.jpg" />
+										<div class="imgCover"></div>
+									</div>
+									<div class="selfCover rightSelfColor">
+										<div class="info">
+											<h3>Heading Here</h3>
+											<hr />
+											<p>Description goes here</p>
+										</div>
+									</div>
+								</div>
+							</li>
+						</ul>
+						<div class="clearBoth"></div>
+					</div>
+
+					<h3 id="type18">圆形类型十八</h3>
+					<div class="circleType ">
+						<ul>
+							<li class="circle109">
+								<div class="imgContainer touch66">
+									<div class="move">
+										<img src="image/circle/7.jpg" />
+										<div class="imgCover"></div>
+									</div>
+									<div class="selfCover leftSelfColor">
+										<div class="info">
+											<h3>Heading Here</h3>
+											<hr />
+											<p>Description goes here</p>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li class="circle110">
+								<div class="imgContainer touch66">
+									<div class="move">
+										<img src="image/circle/8.jpg" />
+										<div class="imgCover"></div>
+									</div>
+									<div class="selfCover rightSelfColor">
+										<div class="info">
+											<h3>Heading Here</h3>
+											<hr />
+											<p>Description goes here</p>
+										</div>
+									</div>
+								</div>
+							</li>
+						</ul>
+						<div class="clearBoth"></div>
+					</div>
+
+				</div>
+				<div class="clearBoth"></div>
+			</div>
+		</div>
+	</body>
+
+</html>

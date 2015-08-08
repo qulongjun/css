@@ -1,0 +1,1223 @@
+body {
+	font-family: "微软雅黑";
+}
+a:link {
+	text-decoration: none;
+	color: black;
+}
+a:visited {
+	color: black;
+}
+.clearBoth {
+	clear: both;
+}
+#warpper {
+	width: 100%;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	background: url(../image/bg.jpg) repeat;
+}
+#container {
+	width: 60%;
+	margin: 0 auto;
+}
+#nav {
+	width: 10%;
+	text-align: left;
+	position: fixed;
+	top: 10px;
+}
+#content {
+	width: 80%;
+	float: right;
+}
+#nav dt {
+	font-size: 1.2em;
+	padding: 10px 0;
+	cursor: pointer;
+	font-weight: bolder;
+}
+#nav dt:hover,
+#nav dd:hover {
+	background-color: #eeecf1;
+}
+#nav dd {
+	font-size: 1.1em;
+	padding: 10px;
+	cursor: pointer;
+}
+#content h2 {
+	font-family: "微软雅黑";
+	font-size: 2em;
+}
+#content h3 {
+	font-family: "微软雅黑";
+	padding: 5px;
+	font-size: 1.5em;
+	text-align: center;
+}
+#content .circleType {
+	border: 2px solid #eeecf1;
+	width: 90%;
+	margin: 20px auto;
+	border-radius: 10px;
+}
+#content .circleType li {
+	float: left;
+	margin: 2%;
+	width: 45%;
+	text-align: center;
+}
+#content .circleType li .imgContainer {
+	width: 80%;
+	position: relative;
+}
+#content .circleType li .imgContainer img {
+	width: 300px;
+	height: 300px;
+	border-radius: 50%;
+	overflow: hidden;
+	z-index: 1;
+}
+#content .circleType li .imgContainer .imgBorder {
+	border-width: 10px;
+	border-style: solid;
+	border-color: #ecab18 #1ad280 #1ad280 #ecab18;
+	border-radius: 50%;
+	overflow: hidden;
+	width: 100%;
+	position: absolute;
+	top: -10px;
+	left: -10px;
+	width: 300px;
+	height: 300px;
+	z-index: 2;
+}
+#content .circleType li .info {
+	width: 40%;
+	position: absolute;
+	top: 30%;
+	left: 30%;
+	z-index: 3;
+}
+#content .circleType li .imgContainer .info p {
+	font-size: 0.8em;
+	font-style: italic;
+}
+@keyframes circle1 {
+	from {
+		transform: rotate(0deg);
+	}
+	to {
+		transform: rotate(180deg);
+	}
+}
+@keyframes circle1Back {
+	from {
+		transform: rotate(0deg);
+	}
+	to {
+		transform: rotate(-180deg);
+	}
+}
+#content .circleType .imgCover {
+	width: 300px;
+	height: 300px;
+	font-size: 0;
+	box-shadow: 0 0 0 20px rgba(255, 255, 255, 0.4) inset;
+	position: absolute;
+	top: 0;
+	left: 0;
+	border-radius: 50%;
+	z-index: 3;
+}
+#content .circleType .imgCover img {
+	position: relative;
+	z-index: 2;
+}
+#content .circleType .circle3 {
+	position: relative;
+}
+#content .circleType .leftCover {
+	position: absolute;
+	top: 0;
+	left: -300px;
+	height: 300px;
+	width: 300px;
+	border-radius: 50%;
+	background-color: rgba(0, 0, 0, 0.4);
+	transition: All 0.4s ease-in-out;
+	z-index: 4;
+	display: none;
+	visibility: hidden;
+}
+#content .circleType .rightCover {
+	position: absolute;
+	top: 0;
+	left: 300px;
+	height: 300px;
+	width: 300px;
+	border-radius: 50%;
+	background-color: rgba(0, 0, 0, 0.4);
+	transition: All 0.4s ease-in-out;
+	z-index: 4;
+	display: none;
+	visibility: hidden;
+}
+#content .circleType .topCover {
+	position: absolute;
+	top: -300px;
+	left: 0;
+	height: 300px;
+	width: 300px;
+	border-radius: 50%;
+	background-color: rgba(0, 0, 0, 0.4);
+	transition: All 0.4s ease-in-out;
+	z-index: 4;
+	display: none;
+	visibility: hidden;
+}
+#content .circleType .bottomCover {
+	position: absolute;
+	top: 300px;
+	left: 0;
+	height: 300px;
+	width: 300px;
+	border-radius: 50%;
+	background-color: rgba(0, 0, 0, 0.4);
+	transition: All 0.4s ease-in-out;
+	z-index: 4;
+	display: none;
+	visibility: hidden;
+}
+#content .circleType .selfCover {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 300px;
+	width: 300px;
+	border-radius: 50%;
+	background-color: rgba(0, 0, 0, 0.4);
+	transition: All 0.4s ease-in-out;
+	z-index: 4;
+	opacity: 0;
+	display: none;
+	visibility: hidden;
+}
+#content .circleType img {
+	transition: All 0.4s ease-in-out;
+}
+#content .circleType .move {
+	transition: All 0.4s ease-in-out;
+	z-index: 5;
+}
+#content .circleType .touch0 .imgBorder {
+	transition: All 1s ease-in-out;
+}
+#content .circleType .touch0 .info {
+	opacity: 0;
+	transition: All 1s ease-in-out;
+}
+#content .circleType .touch21 .leftCover,
+#content .circleType .touch22 .rightCover,
+#content .circleType .touch23 .topCover,
+#content .circleType .touch24 .bottomCover {
+	transform: scale(0.5);
+	opacity: 0;
+}
+#content .circleType .touch33 .selfCover,
+#content .circleType .touch34 .selfCover,
+#content .circleType .touch35 .selfCover,
+#content .circleType .touch36 .selfCover {
+	transition: 0.6s;
+	transform-style: preserve-3d;
+}
+#content .circleType .touch29 .selfCover .info,
+#content .circleType .touch30 .selfCover .info,
+#content .circleType .touch31 .selfCover .info,
+#content .circleType .touch32 .selfCover .info {
+	top: 15%;
+}
+#content .circleType .leftColor {
+	background-color: #333;
+	color: white;
+}
+#content .circleType .rightColor {
+	background-color: #1a4a72;
+	color: white;
+}
+#content .circleType .leftSelfColor {
+	background-color: rgba(0, 0, 0, 0.4);
+	color: white;
+}
+#content .circleType .rightSelfColor {
+	background-color: rgba(26, 74, 114, 0.4);
+	color: white;
+}
+#content .circleType .touch41 .selfCover,
+#content .circleType .touch42 .selfCover,
+#content .circleType .touch43 .selfCover,
+#content .circleType .touch44 .selfCover,
+#content .circleType .touch45 .selfCover,
+#content .circleType .touch46 .selfCover,
+#content .circleType .touch47 .selfCover,
+#content .circleType .touch48 .selfCover {
+	display: block;
+	visibility: visible;
+	opacity: 1;
+}
+#content .circleType .touch41 .selfCover .info {
+	top: -35%;
+	opacity: 0;
+	transition: All 0.8s ease-in-out;
+}
+#content .circleType .touch42 .selfCover .info {
+	top: 100%;
+	opacity: 0;
+	transition: All 0.8s ease-in-out;
+}
+#content .circleType .touch43 .selfCover .info {
+	opacity: 0;
+	left: -40%;
+	transition: All 0.8s ease-in-out;
+}
+#content .circleType .touch44 .selfCover .info {
+	left: 100%;
+	opacity: 0;
+	transition: All 0.8s ease-in-out;
+}
+#content .circleType .touch45 .selfCover .info {
+	left: -40%;
+	top: -35%;
+	opacity: 0;
+	transition: All 0.8s ease-in-out;
+}
+#content .circleType .touch46 .selfCover .info {
+	left: 100%;
+	top: 100%;
+	opacity: 0;
+	transition: All 0.8s ease-in-out;
+}
+#content .circleType .touch47 .selfCover .info {
+	left: -40%;
+	top: 100%;
+	opacity: 0;
+	transition: All 0.8s ease-in-out;
+}
+#content .circleType .touch48 .selfCover .info {
+	left: 100%;
+	top: -35%;
+	opacity: 0;
+	transition: All 0.8s ease-in-out;
+}
+#content .circleType .touch0:hover .imgBorder {
+	transform: rotate(180deg);
+}
+#content .circleType .touch0:hover .info {
+	opacity: 1;
+}
+#content .circleType .touch1:hover img {
+	transform: rotate(-90deg);
+}
+#content .circleType .touch2:hover img {
+	transform: rotate(90deg);
+}
+#content .circleType .touch3:hover img {
+	transform: rotate(-90deg);
+}
+#content .circleType .touch4:hover img {
+	transform: rotate(90deg);
+}
+#content .circleType .touch5:hover .move {
+	transform: translateX(150px) scale(0.5);
+	position: relative;
+}
+#content .circleType .touch6:hover .move {
+	transform: translateX(-150px) scale(0.5);
+	position: relative;
+}
+#content .circleType .touch7:hover .move {
+	transform: translateY(150px) scale(0.5);
+	position: relative;
+}
+#content .circleType .touch8:hover .move {
+	transform: translateY(-150px) scale(0.5);
+	position: relative;
+}
+#content .circleType .touch9:hover .move {
+	animation: circle19 0.4s;
+	animation-fill-mode: forwards;
+	position: relative;
+}
+#content .circleType .touch10:hover .move {
+	animation: circle21 0.4s;
+	animation-fill-mode: forwards;
+	position: relative;
+}
+#content .circleType .touch11:hover .move {
+	animation: circle23 0.4s;
+	animation-fill-mode: forwards;
+	position: relative;
+}
+#content .circleType .touch12:hover .move {
+	animation: circle25 0.4s;
+	animation-fill-mode: forwards;
+	position: relative;
+}
+#content .circleType .touch14:hover .move {
+	transform: scale(1.8);
+	opacity: 0;
+}
+#content .circleType .touch15:hover .move {
+	transform: scale(0.6);
+	opacity: 0;
+}
+#content .circleType .touch16:hover .move,
+#content .circleType .touch17:hover .move,
+#content .circleType .touch18:hover .move,
+#content .circleType .touch19:hover .move,
+#content .circleType .touch20:hover .move {
+	transform: scale(0);
+	opacity: 0;
+}
+#content .circleType .touch21:hover .move {
+	animation: touch21 0.8s;
+	animation-fill-mode: forwards;
+}
+#content .circleType .touch22:hover .move {
+	animation: touch22 0.8s;
+	animation-fill-mode: forwards;
+}
+#content .circleType .touch23:hover .move {
+	animation: touch23 0.8s;
+	animation-fill-mode: forwards;
+}
+#content .circleType .touch24:hover .move {
+	animation: touch24 0.8s;
+	animation-fill-mode: forwards;
+}
+#content .circleType .touch25:hover .move,
+#content .circleType .touch37:hover .move {
+	transform: translateX(300px) rotate(180deg);
+	opacity: 0;
+}
+#content .circleType .touch26:hover .move,
+#content .circleType .touch38:hover .move {
+	transform: translateX(-300px) rotate(-180deg);
+	opacity: 0;
+}
+#content .circleType .touch27:hover .move,
+#content .circleType .touch39:hover .move {
+	transform: translateY(300px) rotate(180deg);
+	opacity: 0;
+}
+#content .circleType .touch28:hover .move,
+#content .circleType .touch40:hover .move {
+	transform: translateY(-300px) rotate(-180deg);
+	opacity: 0;
+}
+#content .circleType .touch29:hover .move {
+	transform: scale(0.5);
+	transform-origin: bottom;
+}
+#content .circleType .touch30:hover .move {
+	transform: scale(0.5);
+	transform-origin: top;
+}
+#content .circleType .touch31:hover .move {
+	transform: scale(0.5);
+	transform-origin: left;
+}
+#content .circleType .touch32:hover .move {
+	transform: scale(0.5);
+	transform-origin: right;
+}
+#content .circleType .touch33:hover .move {
+	transform: rotateY(90deg);
+	opacity: 0;
+}
+#content .circleType .touch34:hover .move {
+	transform: rotateY(-90deg);
+	opacity: 0;
+}
+#content .circleType .touch35:hover .move {
+	transform: rotateX(90deg);
+	opacity: 0;
+}
+#content .circleType .touch36:hover .move {
+	transform: rotateX(-90deg);
+	opacity: 0;
+}
+#content .circleType .touch33:hover .move,
+#content .circleType .touch34:hover .move,
+#content .circleType .touch35:hover .move,
+#content .circleType .touch36:hover .move {
+	transition: 0.6s;
+	transform-style: preserve-3d;
+}
+#content .circleType .touch49:hover .move {
+	transform: scaleX(0);
+	transform-origin: right;
+	opacity: 0;
+}
+#content .circleType .touch50:hover .move {
+	transform: scaleX(0);
+	transform-origin: left;
+	opacity: 0;
+}
+#content .circleType .touch51:hover .move {
+	transform: scaleY(0);
+	transform-origin: bottom;
+	opacity: 0;
+}
+#content .circleType .touch52:hover .move {
+	transform: scaleY(0);
+	transform-origin: top;
+	opacity: 0;
+}
+#content .circleType .touch53:hover .move,
+#content .circleType .touch54:hover .move {
+	transform: rotate(720deg) scale(0);
+	transition-duration: 1s;
+	opacity: 0;
+}
+#content .circleType .touch55:hover .move,
+#content .circleType .touch56:hover .move {
+	transform: rotate(-720deg) scale(0);
+	transition-duration: 1s;
+	opacity: 0;
+}
+#content .circleType .touch58:hover .move {
+	transform: rotate(180deg);
+	transition-duration: 1s;
+	transform-origin: right;
+}
+#content .circleType .touch59:hover .move {
+	transform: rotate(-180deg);
+	transition-duration: 1s;
+	transform-origin: right;
+}
+#content .circleType .touch60:hover .move {
+	transform: rotate(180deg);
+	transition-duration: 1s;
+	transform-origin: left;
+}
+#content .circleType .touch61:hover .move {
+	transform: rotate(-180deg);
+	transition-duration: 1s;
+	transform-origin: left;
+}
+#content .circleType .touch62:hover .move {
+	transform: rotate(180deg);
+	transition-duration: 1s;
+	transform-origin: top;
+}
+#content .circleType .touch63:hover .move {
+	transform: rotate(-180deg);
+	transition-duration: 1s;
+	transform-origin: top;
+}
+#content .circleType .touch64:hover .move {
+	transform: rotate(180deg);
+	transition-duration: 1s;
+	transform-origin: bottom;
+}
+#content .circleType .touch65:hover .move {
+	transform: rotate(-180deg);
+	transition-duration: 1s;
+	transform-origin: bottom;
+}
+#content .circleType .touch58 .selfCover,
+#content .circleType .touch59 .selfCover,
+#content .circleType .touch60 .selfCover,
+#content .circleType .touch61 .selfCover,
+#content .circleType .touch62 .selfCover,
+#content .circleType .touch63 .selfCover,
+#content .circleType .touch64 .selfCover,
+#content .circleType .touch65 .selfCover {
+	opacity: 1;
+	display: block;
+	visibility: visible;
+	z-index: -1;
+}
+@keyframes touch21 {
+	from {
+		transform: scale(1);
+	}
+	50% {
+		transform: scale(0.5) translateX(0);
+		opacity: 1;
+	}
+	to {
+		transform: scale(0.5) translateX(300px);
+		opacity: 0;
+	}
+}
+@keyframes touch22 {
+	from {
+		transform: scale(1);
+	}
+	50% {
+		transform: scale(0.5) translateX(0);
+		opacity: 1;
+	}
+	to {
+		transform: scale(0.5) translateX(-300px);
+		opacity: 0;
+	}
+}
+@keyframes touch23 {
+	from {
+		transform: scale(1);
+	}
+	50% {
+		transform: scale(0.5) translatey(0);
+		opacity: 1;
+	}
+	to {
+		transform: scale(0.5) translateY(300px);
+		opacity: 0;
+	}
+}
+@keyframes touch24 {
+	from {
+		transform: scale(1);
+	}
+	50% {
+		transform: scale(0.5) translatey(0);
+		opacity: 1;
+	}
+	to {
+		transform: scale(0.5) translateY(-300px);
+		opacity: 0;
+	}
+}
+#content .circleType .touch1:hover .leftCover,
+#content .circleType .touch5:hover .leftCover,
+#content .circleType .touch9:hover .leftCover,
+#content .circleType .touch17:hover .leftCover {
+	animation: circle3 0.4s;
+	animation-iteration-count: 1;
+	animation-fill-mode: forwards;
+	visibility: visible;
+	display: block;
+}
+#content .circleType .touch2:hover .rightCover,
+#content .circleType .touch6:hover .rightCover,
+#content .circleType .touch10:hover .rightCover,
+#content .circleType .touch18:hover .rightCover {
+	animation: circle3 0.4s;
+	animation-iteration-count: 1;
+	animation-fill-mode: forwards;
+	display: block;
+	visibility: visible;
+}
+#content .circleType .touch3:hover .topCover,
+#content .circleType .touch7:hover .topCover,
+#content .circleType .touch11:hover .topCover,
+#content .circleType .touch19:hover .topCover {
+	animation: circle3 0.4s;
+	animation-iteration-count: 1;
+	animation-fill-mode: forwards;
+	display: block;
+	visibility: visible;
+}
+#content .circleType .touch4:hover .bottomCover,
+#content .circleType .touch8:hover .bottomCover,
+#content .circleType .touch12:hover .bottomCover,
+#content .circleType .touch20:hover .bottomCover {
+	animation: circle3 0.4s;
+	animation-iteration-count: 1;
+	animation-fill-mode: forwards;
+	display: block;
+	visibility: visible;
+}
+#content .circleType .touch13:hover .selfCover {
+	animation: circle27 0.4s;
+	animation-fill-mode: forwards;
+	display: block;
+	visibility: visible;
+}
+#content .circleType .touch14:hover .selfCover {
+	opacity: 1;
+	animation: circle29 0.4s;
+	display: block;
+	visibility: visible;
+}
+#content .circleType .touch15:hover .selfCover {
+	opacity: 1;
+	animation: circle31 0.4s;
+	display: block;
+	visibility: visible;
+}
+#content .circleType .touch16:hover .selfCover {
+	opacity: 1;
+	animation: circle33 0.4s;
+	display: block;
+	visibility: visible;
+}
+#content .circleType .touch21:hover .leftCover {
+	animation: circle43 0.8s;
+	animation-delay: 0.4s;
+	animation-fill-mode: forwards;
+	visibility: visible;
+	display: block;
+}
+#content .circleType .touch22:hover .rightCover {
+	animation: circle44 0.8s;
+	animation-delay: 0.4s;
+	animation-fill-mode: forwards;
+	visibility: visible;
+	display: block;
+}
+#content .circleType .touch23:hover .topCover {
+	animation: circle45 0.8s;
+	animation-delay: 0.4s;
+	animation-fill-mode: forwards;
+	visibility: visible;
+	display: block;
+}
+#content .circleType .touch24:hover .bottomCover {
+	animation: circle46 0.8s;
+	animation-delay: 0.4s;
+	animation-fill-mode: forwards;
+	visibility: visible;
+	display: block;
+}
+#content .circleType .touch25:hover .selfCover,
+#content .circleType .touch26:hover .selfCover,
+#content .circleType .touch27:hover .selfCover,
+#content .circleType .touch28:hover .selfCover {
+	animation: circle51 1s;
+	animation-fill-mode: forwards;
+	visibility: visible;
+	display: block;
+}
+#content .circleType .touch29:hover .selfCover,
+#content .circleType .touch30:hover .selfCover,
+#content .circleType .touch31:hover .selfCover,
+#content .circleType .touch32:hover .selfCover {
+	animation: circle51 0.4s;
+	animation-fill-mode: forwards;
+	visibility: visible;
+	display: block;
+}
+#content .circleType .touch33:hover .selfCover {
+	display: block;
+	visibility: visible;
+	animation: circle59 1s;
+	animation-fill-mode: forwards;
+}
+#content .circleType .touch34:hover .selfCover {
+	display: block;
+	visibility: visible;
+	animation: circle61 1s;
+	animation-fill-mode: forwards;
+}
+#content .circleType .touch35:hover .selfCover {
+	display: block;
+	visibility: visible;
+	animation: circle63 1s;
+	animation-fill-mode: forwards;
+}
+#content .circleType .touch36:hover .selfCover {
+	display: block;
+	visibility: visible;
+	animation: circle65 1s;
+	animation-fill-mode: forwards;
+}
+#content .circleType .touch37:hover .rightCover {
+	display: block;
+	visibility: visible;
+	opacity: 0;
+	animation: circle67 0.4s;
+	animation-delay: 0.4s;
+	animation-fill-mode: forwards;
+}
+#content .circleType .touch38:hover .leftCover {
+	display: block;
+	visibility: visible;
+	opacity: 0;
+	animation: circle69 0.4s;
+	animation-delay: 0.4s;
+	animation-fill-mode: forwards;
+}
+#content .circleType .touch39:hover .bottomCover {
+	display: block;
+	visibility: visible;
+	opacity: 0;
+	animation: circle71 0.4s;
+	animation-delay: 0.4s;
+	animation-fill-mode: forwards;
+}
+#content .circleType .touch40:hover .topCover {
+	display: block;
+	visibility: visible;
+	opacity: 0;
+	animation: circle73 0.4s;
+	animation-delay: 0.4s;
+	animation-fill-mode: forwards;
+}
+#content .circleType .touch41:hover .selfCover .info,
+#content .circleType .touch42:hover .selfCover .info,
+#content .circleType .touch43:hover .selfCover .info,
+#content .circleType .touch44:hover .selfCover .info,
+#content .circleType .touch45:hover .selfCover .info,
+#content .circleType .touch46:hover .selfCover .info,
+#content .circleType .touch47:hover .selfCover .info,
+#content .circleType .touch48:hover .selfCover .info {
+	top: 30%;
+	left: 30%;
+	opacity: 1;
+}
+#content .circleType .touch49:hover .selfCover {
+	animation: circle91 0.6s;
+	opacity: 1;
+	display: block;
+	visibility: visible;
+	transform-origin: left;
+}
+#content .circleType .touch50:hover .selfCover {
+	animation: circle91 0.6s;
+	opacity: 1;
+	display: block;
+	visibility: visible;
+	transform-origin: right;
+}
+#content .circleType .touch51:hover .selfCover {
+	animation: circle93 0.6s;
+	opacity: 1;
+	display: block;
+	visibility: visible;
+	transform-origin: top;
+}
+#content .circleType .touch52:hover .selfCover {
+	animation: circle93 0.6s;
+	opacity: 1;
+	display: block;
+	visibility: visible;
+	transform-origin: bottom;
+}
+#content .circleType .touch53:hover .selfCover {
+	animation: circle95 1s;
+	animation-delay: 0.5s;
+	display: block;
+	visibility: visible;
+	animation-fill-mode: forwards;
+}
+#content .circleType .touch54:hover .selfCover {
+	animation: circle96 1s;
+	animation-delay: 0.5s;
+	display: block;
+	visibility: visible;
+	animation-fill-mode: forwards;
+}
+#content .circleType .touch55:hover .selfCover {
+	animation: circle95 1s;
+	animation-delay: 0.5s;
+	display: block;
+	visibility: visible;
+	animation-fill-mode: forwards;
+}
+#content .circleType .touch56:hover .selfCover {
+	animation: circle96 1s;
+	animation-delay: 0.5s;
+	display: block;
+	visibility: visible;
+	animation-fill-mode: forwards;
+}
+#content .circleType .touch57 .selfCover {
+	opacity: 1;
+	display: block;
+	visibility: visible;
+}
+#content .circleType .touch57 .selfCover .info {
+	opacity: 0;
+}
+#content .circleType .touch57:hover .selfCover .info {
+	animation: circle99 0.5s;
+	animation-fill-mode: forwards;
+}
+#content .circleType .touch66:hover .selfCover {
+	animation: circle109 1s;
+	animation-fill-mode: forwards;
+	display: block;
+	visibility: visible;
+}
+@keyframes circle109 {
+	from {
+		transform: scale(0);
+		opacity: 0;
+	}
+	to {
+		transform: scale(1);
+		opacity: 1;
+	}
+}
+@keyframes circle3 {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+		left: 0;
+		top: 0;
+	}
+}
+@keyframes circle19 {
+	to {
+		opacity: 0;
+		transform: translateX(300px);
+		visibility: hidden;
+	}
+}
+@keyframes circle21 {
+	to {
+		opacity: 0;
+		transform: translateX(-300px);
+		visibility: hidden;
+	}
+}
+@keyframes circle23 {
+	to {
+		opacity: 0;
+		transform: translateY(300px);
+		visibility: hidden;
+	}
+}
+@keyframes circle25 {
+	to {
+		opacity: 0;
+		transform: translateY(-300px);
+		visibility: hidden;
+	}
+}
+@keyframes circle27 {
+	from {
+		left: 150px;
+		width: 0;
+		opacity: 0;
+	}
+	to {
+		left: 0;
+		width: 300px;
+		opacity: 1;
+	}
+}
+@keyframes circle29 {
+	from {
+		transform: scale(0);
+	}
+	to {
+		transform: scale(1);
+	}
+}
+@keyframes circle31 {
+	from {
+		transform: scale(1.4);
+	}
+	to {
+		transform: scale(1);
+	}
+}
+@keyframes circle33 {
+	from {
+		transform: scale(0);
+	}
+	to {
+		transform: scale(1);
+	}
+}
+@keyframes circle43 {
+	from {
+		opacity: 0;
+		transform: translateX(0) scale(0.5);
+	}
+	50% {
+		opacity: 0.5;
+		transform: translateX(300px) scale(0.5);
+	}
+	to {
+		opacity: 1;
+		transform: translateX(300px) scale(1);
+	}
+}
+@keyframes circle44 {
+	from {
+		opacity: 0;
+		transform: translateX(0) scale(0.5);
+	}
+	50% {
+		opacity: 0.5;
+		transform: translateX(-300px) scale(0.5);
+	}
+	to {
+		opacity: 1;
+		transform: translateX(-300px) scale(1);
+	}
+}
+@keyframes circle45 {
+	from {
+		opacity: 0;
+		transform: translateY(0) scale(0.5);
+	}
+	50% {
+		opacity: 0.5;
+		transform: translateY(300px) scale(0.5);
+	}
+	to {
+		opacity: 1;
+		transform: translateY(300px) scale(1);
+	}
+}
+@keyframes circle46 {
+	from {
+		opacity: 0;
+		transform: translateY(0) scale(0.5);
+	}
+	50% {
+		opacity: 0.5;
+		transform: translateY(-300px) scale(0.5);
+	}
+	to {
+		opacity: 1;
+		transform: translateY(-300px) scale(1);
+	}
+}
+@keyframes circle51 {
+	from {
+		opacity: 0;
+		transform: scale(0);
+	}
+	to {
+		opacity: 1;
+		transform: scale(1);
+	}
+}
+@keyframes circle59 {
+	from {
+		transform: rotateY(-180deg);
+		opacity: 0;
+	}
+	to {
+		transform: rotateY(0deg);
+		opacity: 1;
+	}
+}
+@keyframes circle61 {
+	from {
+		transform: rotateY(180deg);
+		opacity: 0;
+	}
+	to {
+		transform: rotateY(0deg);
+		opacity: 1;
+	}
+}
+@keyframes circle63 {
+	from {
+		transform: rotateX(-180deg);
+		opacity: 0;
+	}
+	to {
+		transform: rotateX(0deg);
+		opacity: 1;
+	}
+}
+@keyframes circle65 {
+	from {
+		transform: rotateX(180deg);
+		opacity: 0;
+	}
+	to {
+		transform: rotateX(0deg);
+		opacity: 1;
+	}
+}
+@keyframes circle67 {
+	from {
+		opacity: 0;
+		transform: translateX(0) rotate(180deg);
+	}
+	to {
+		opacity: 1;
+		transform: translateX(-300px) rotate(0deg);
+	}
+}
+@keyframes circle69 {
+	from {
+		opacity: 0;
+		transform: translateX(0) rotate(-180deg);
+	}
+	to {
+		opacity: 1;
+		transform: translateX(300px) rotate(0deg);
+	}
+}
+@keyframes circle71 {
+	from {
+		opacity: 0;
+		transform: translateY(0) rotate(180deg);
+	}
+	to {
+		opacity: 1;
+		transform: translateY(-300px) rotate(0deg);
+	}
+}
+@keyframes circle73 {
+	from {
+		opacity: 0;
+		transform: translateY(0) rotate(-180deg);
+	}
+	to {
+		opacity: 1;
+		transform: translateY(300px) rotate(0deg);
+	}
+}
+@keyframes circle91 {
+	from {
+		transform: scaleX(0);
+		opacity: 0;
+	}
+	to {
+		transform: scaleX(1);
+		opacity: 1;
+	}
+}
+@keyframes circle93 {
+	from {
+		transform: scaleY(0);
+		opacity: 0;
+	}
+	to {
+		transform: scaleY(1);
+		opacity: 1;
+	}
+}
+@keyframes circle95 {
+	from {
+		transform: scale(0) rotate(0);
+		opacity: 0;
+	}
+	to {
+		transform: scale(1) rotate(-720deg);
+		opacity: 1;
+	}
+}
+@keyframes circle96 {
+	from {
+		transform: scale(0) rotate(0);
+		opacity: 0;
+	}
+	to {
+		transform: scale(1) rotate(720deg);
+		opacity: 1;
+	}
+}
+@keyframes circle99 {
+	from {
+		transform: scale(0);
+		opacity: 0;
+	}
+	to {
+		transform: scale(1);
+		opacity: 1;
+	}
+}
+@media only screen and (min-width: 1201px) and (max-width: 1400px) {
+	#nav dd {
+		font-size: 14px;
+	}
+	#container {
+		width: 80%;
+	}
+}
+@media only screen and (min-width: 1081px) and (max-width: 1200px) {
+	#nav dd {
+		font-size: 12px;
+	}
+	#container {
+		width: 90%;
+	}
+}
+@media only screen and (min-width: 941px) and (max-width: 1080px) {
+	#nav {
+		width: 15%;
+	}
+	#nav dd {
+		font-size: 12px;
+		padding: 7px;
+	}
+	#container {
+		width: 100%;
+	}
+}
+@media only screen and (min-width: 801px) and (max-width: 940px) {
+	/*float: none;*/
+	
+	#nav {
+		width: 15%;
+	}
+	#nav dt {
+		font-size: 14px;
+		padding: 6px;
+	}
+	#nav dd {
+		font-size: 12px;
+		padding: 6px;
+	}
+	#container {
+		width: 100%;
+	}
+	#container #content .circleType li {
+		float: none;
+		display: block;
+		margin: 10% auto;
+	}
+}
+@media only screen and (min-width: 641px) and (max-width: 800px) {
+	#nav {
+		width: 20%;
+	}
+	#nav dt {
+		font-size: 10px;
+		padding: 4px;
+	}
+	#nav dd {
+		font-size: 12px;
+		padding: 4px;
+	}
+	#container {
+		width: 100%;
+	}
+	#container #content .circleType li {
+		float: none;
+		display: block;
+		margin: 10% auto;
+	}
+}
+@media only screen and (min-width: 100px) and (max-width: 640px) {
+	#nav {
+		width: 20%;
+		position: static;
+		float: left;
+	}
+	#nav dt {
+		font-size: 10px;
+		padding: 4px;
+	}
+	#nav dd {
+		font-size: 12px;
+		padding: 4px;
+	}
+	#container {
+		width: 100%;
+	}
+	#container #content .circleType li {
+		float: none;
+		display: block;
+		margin-top: 10%;
+	}
+	#content {
+		width: 70%;
+	}
+}
