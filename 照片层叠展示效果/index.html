@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/cssReset.css" />
+		<link rel="stylesheet" type="text/css" href="css/demo.css" />
+	</head>
+
+	<body>
+		<div id="warpper">
+			<div id="container">
+				<div class="title">
+					<h1>常见相片展开特效</h1>
+					<h2>Introduction</h2>
+					<p>本页面的特效均采用纯CSS3的变形等效果实现，每个变形效果均设定事件为1秒，可以根据需求自行修改，在Demo.css样式表中， 注释了公共部分的代码为必需的，应用特效时必须将公共部分代码先添加到CSS样式中，再复制相关样式到CSS样式中即可。用户 可自定义修改旋转角度、缩放比例以及位移偏移量等属性。
+					</p>
+					<h2>兼容性</h2>
+					<p>特效是根据CSS3的2D变换功能实现的，因此只能运行在兼容CSS3的浏览器中，具体如下：
+						<p>1.谷歌Chrome(45.0.2431)中运行正常</p>
+						<p>2.火狐FireFox(版本39.0.0)中运行正常</p>
+						<p>3.Opera(版本 30.0.1)中运行正常</p>
+						<p>4.IE10及以上中运行正常</p>
+						<p>5.IE9中能显示最终的特效结果，但不能动态的展现出来，部分功能不兼容。</p>
+						<p>6.IE8及以下版本不支持CSS3的特效。</p>
+					</p>
+				</div>
+				<div class="sim sim_1">
+					<div class="pictures">
+						<img src="images/studio_0007.jpg" />
+						<img src="images/studio_0002.jpg" />
+						<img src="images/studio_0003.jpg" />
+						<img src="images/studio_0004.jpg" />
+						<img src="images/studio_0005.jpg" />
+						<img src="images/studio_0006.jpg" />
+						<img src="images/studio_0001.jpg" />
+					</div>
+					<div class="comment">
+						<p>本特效的实现效果为：层叠在每一层的图片都会按照预设的角度不同的翻转，形成对称的图片轴。</p>
+						<p>本特效共有7张图，具体的实现方法为：</p>
+						<p>每两层为旋转成对称图片，即奇数层顺时针旋转，偶数层逆时针旋转。 度数分别为10、20、30。最外层不进行旋转，进行缩放0.9倍处理。
+						</p>
+					</div>
+					<div class="clearBoth">
+					</div>
+				</div>
+				<div class="sim sim_2">
+					<div class="pictures">
+						<img src="images/studio_0007.jpg" />
+						<img src="images/studio_0002.jpg" />
+						<img src="images/studio_0003.jpg" />
+						<img src="images/studio_0004.jpg" />
+						<img src="images/studio_0005.jpg" />
+					</div>
+					<div class="comment">
+						<p>本特效的实现效果为：将图片从预设的左下角展开，类似于扇子的展开方式。</p>
+						<p>本特效共有5张图，具体的实现方法为：</p>
+						<p>先将每层的图片平移到相应的位置，再对其进行旋转操作，上一层平移后，右下角正好位于下一层的left边框之上，需要x平移的百分比等于旋转的度数。</p>
+
+					</div>
+					<div class="clearBoth">
+					</div>
+				</div>
+				<div class="sim sim_3">
+					<div class="pictures">
+						<img src="images/studio_0007.jpg" />
+						<img src="images/studio_0002.jpg" />
+						<img src="images/studio_0003.jpg" />
+						<img src="images/studio_0004.jpg" />
+						<img src="images/studio_0005.jpg" />
+						<img src="images/studio_0006.jpg" />
+						<img src="images/studio_0007.jpg" />
+						<img src="images/studio_0008.jpg" />
+						<img src="images/studio_0009.jpg" />
+
+					</div>
+					<div class="comment">
+						<p>本特效的实现效果为：将图片从预设的右下角展开，展开后呈对称型，最外层不进行旋转。</p>
+						<p>本特效共有9张图，具体的实现方法为：</p>
+						<p>和第二种方法类似，先位移后旋转，只是旋转和位移的时候进行反向操作。即第一层到第四层逆时针旋转和位移，第五层到第八层顺时针旋转和位移，最外层不进行旋转和位移操作，仅放缩。</p>
+
+					</div>
+					<div class="clearBoth">
+					</div>
+				</div>
+				<div class="sim sim_4">
+					<div class="pictures">
+						<img src="images/studio_0009.jpg" />
+						<img src="images/studio_0008.jpg" />
+						<img src="images/studio_0007.jpg" />
+						<img src="images/studio_0006.jpg" />
+						<img src="images/studio_0005.jpg" />
+						<img src="images/studio_0004.jpg" />
+						<img src="images/studio_0003.jpg" />
+						<img src="images/studio_0001.jpg" />
+						<img src="images/studio_0002.jpg" />
+					</div>
+					<div class="comment">
+						<p>本特效的实现效果为：图片向左上方呈螺旋式传递。</p>
+						<p>本特效共有9张图，具体的实现方法为：</p>
+						<p>该特效使用了缩放、旋转、平移操作，从第一层 到第七层缩放依次从0.3~0.9，第八层不进行缩放 ， 第九层进行放大1.1倍。 于此同时，进行位移操作， 位移操作的数值x为y的2倍，第一层x位移-60%， y位移-120%，每层x轴依次为-60%,-50%,-40%, -30%,-20%,-10% 每层的旋转度数和x轴位移数值相同，为逆时针，最外层不进行旋转。
+						</p>
+
+					</div>
+					<div class="clearBoth">
+					</div>
+				</div>
+				<div class="sim sim_5">
+					<div class="pictures">
+						<img src="images/studio_0007.jpg" />
+						<img src="images/studio_0002.jpg" />
+						<img src="images/studio_0003.jpg" />
+						<img src="images/studio_0005.jpg" />
+						<img src="images/studio_0004.jpg" />
+					</div>
+					<div class="comment">
+						<p>本特效的实现效果为：层叠展开至上、下、左、右四个方向。上一层遮挡下一层部分图片</p>
+						<p>本特效共有5张图，具体的实现方法为：</p>
+						<p>5层图片均为逆时针旋转20°，第一、第三张照片分别在Y方向上位移50%和-50%，第二、第四张图片分别在X方向上位移50%，-50%，最上面一张不进行位移和旋转操作，只放大1.1倍。</p>
+					</div>
+					<div class="clearBoth">
+					</div>
+				</div>
+				<div class="sim sim_6">
+					<div class="pictures">
+						<img src="images/studio_0009.jpg" />
+						<img src="images/studio_0008.jpg" />
+						<img src="images/studio_0007.jpg" />
+						<img src="images/studio_0006.jpg" />
+						<img src="images/studio_0005.jpg" />
+						<img src="images/studio_0004.jpg" />
+						<img src="images/studio_0001.jpg" />
+						<img src="images/studio_0002.jpg" />
+						<img src="images/studio_0003.jpg" />
+					</div>
+					<div class="comment">
+						<p>本特效的实现效果为：层叠旋转展开至上、下、左、右四个方向。并不进行遮挡</p>
+						<p>本特效共有9张图，具体的实现方法为：</p>
+						<p>9张图片均逆时针旋转20度，除了最外层一张图片，其他图片都进行缩放0.8的操作，位移操作的位置为：(20%, 85%)、(80%, -45%)、(100%, 40%)、(60%, -130%)，并取反方向也有4个，最外层不位移，只放大1.2倍。
+						</p>
+
+					</div>
+					<div class="clearBoth">
+					</div>
+				</div>
+				<div class="sim sim_7">
+					<div class="pictures">
+						<img src="images/studio_0007.jpg" />
+						<img src="images/studio_0002.jpg" />
+						<img src="images/studio_0003.jpg" />
+						<img src="images/studio_0006.jpg" />
+					</div>
+					<div class="comment">
+						<p>本特效的实现效果为：层叠图像向后展开。</p>
+						<p>本特效共有4张图，具体的实现方法为：</p>
+						<p>4张图片依次缩放0.5，0.7，0.9，1.1倍，第一层向上位移40%，第二层向上位移20%，第三层不进行位移，第四层向下位移20%</p>
+
+					</div>
+					<div class="clearBoth">
+					</div>
+				</div>
+
+				<div class="sim sim_8">
+					<div class="pictures">
+						<img src="images/studio_0009.jpg" />
+						<img src="images/studio_0008.jpg" />
+						<img src="images/studio_0001.jpg" />
+						<img src="images/studio_0006.jpg" />
+						<img src="images/studio_0005.jpg" />
+						<img src="images/studio_0004.jpg" />
+						<img src="images/studio_0003.jpg" />
+						<img src="images/studio_0002.jpg" />
+						<img src="images/studio_0007.jpg" />
+					</div>
+					<div class="comment">
+						<p>本特效的实现效果为：层叠图像从中线对称着旋转向后延伸。</p>
+						<p>本特效共有9张图，具体的实现方法为：</p>
+						<p>左边4张图和右边4张图实现方法相同，数据相反，以左边为例，4张图依次缩放0.2，0.4，0.6，0.8， 旋转角度依次为80°，60°，40°，20°，平移量为(20%, -80%)，(20%, -80%)，(40%, -40%)，(50%, -20%)。</p>
+					</div>
+					<div class="clearBoth">
+					</div>
+				</div>
+				<div class="sim sim_9">
+					<div class="pictures">
+						<img src="images/studio_0009.jpg" />
+						<img src="images/studio_0001.jpg" />
+						<img src="images/studio_0007.jpg" />
+						<img src="images/studio_0006.jpg" />
+						<img src="images/studio_0005.jpg" />
+						<img src="images/studio_0004.jpg" />
+						<img src="images/studio_0003.jpg" />
+						<img src="images/studio_0002.jpg" />
+						<img src="images/studio_0008.jpg" />
+					</div>
+					<div class="comment">
+						<p>本特效的实现效果为：层叠图像从中间展开，形成九宫格分布。</p>
+						<p>本特效共有9张图，具体的实现方法为：</p>
+						<p>
+							9张图每张图均缩放0.7倍，并顺时针旋转10度，然后将每张图片平移到九宫格对应的位置，平移量依次为：(0, 75%)，(72%, 75%)，(-72%, 75%)，(-72%, 0)，(72%, 0)，(72%, -70%)，(-72%, -70%)，(0, -70%)，最上层一张不进行位移操作。
+						</p>
+					</div>
+					<div class="clearBoth">
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+
+</html>

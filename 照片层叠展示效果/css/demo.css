@@ -1,0 +1,412 @@
+body {
+	background: url(../images/bg.jpg);
+}
+#warpper {
+	width: 80%;
+	margin: 0 auto;
+}
+#container {
+	width: 80%;
+	margin: 2% auto;
+	padding-bottom: 5%;
+}
+.title {
+	font-family: "微软雅黑";
+}
+.title h1 {
+	font-size: 2em;
+	text-align: center;
+}
+.title h2 {
+	margin: 10px 0;
+	font-size: 1.5em;
+}
+.title p {
+	text-indent: 2em;
+	line-height: 1.5em;
+}
+/*公共部分*/
+
+.clearBoth {
+	clear: both;
+}
+.sim {
+	width: 100%;
+	border: 1px solid gray;
+	border-radius: 10px;
+	margin: 60px 0;
+}
+.sim .pictures {
+	font-size: 0;
+	width: 50%;
+	float: left;
+	height: 200px;
+	position: relative;
+}
+.sim .comment {
+	padding: 5px;
+	line-height: 1.5em;
+	text-indent: 2em;
+	font-family: "微软雅黑";
+	font-size: 1em;
+	width: 45%;
+	float: right;
+	height: 100px;
+}
+.sim .pictures img {
+	position: absolute;
+	left: 25%;
+	width: 290px;
+	height: 190px;
+	background-color: rgba(255, 255, 255, 1);
+	padding: 5px;
+	border-radius: 10px;
+	-webkit-transition: all 1s;
+	-moz-transition: all 1s;
+	-o-transition: all 1s;
+	transition: all 1s;
+}
+/*第一个*/
+
+#container .sim_1 .pictures:hover img:nth-child(1) {
+	-ms-transform: rotate(10deg);
+	-webkit-transform: rotate(10deg);
+	transform: rotate(10deg);
+}
+#container .sim_1 .pictures:hover img:nth-child(2) {
+	-ms-transform: rotate(-10deg);
+	-webkit-transform: rotate(-10deg);
+	transform: rotate(-10deg);
+}
+#container .sim_1: .pictures:hover img:nth-child(3) {
+	-ms-transform: rotate(20deg);
+	-webkit-transform: rotate(20deg);
+	transform: rotate(20deg);
+}
+#container .sim_1 .pictures:hover img:nth-child(4) {
+	-ms-transform: rotate(-20deg);
+	-webkit-transform: rotate(-20deg);
+	transform: rotate(-20deg);
+}
+#container .sim_1 .pictures:hover img:nth-child(5) {
+	-ms-transform: rotate(30deg);
+	-webkit-transform: rotate(30deg);
+	transform: rotate(30deg);
+}
+#container .sim_1 .pictures:hover img:nth-child(6) {
+	-ms-transform: rotate(-30deg);
+	-webkit-transform: rotate(-30deg);
+	transform: rotate(-30deg);
+}
+#container .sim_1 .pictures:hover img:nth-child(7) {
+	transform: scale(0.9, 0.9);
+}
+/*第二个*/
+
+#container .sim_2 .pictures:hover img:nth-child(1) {
+	-ms-transform: translate(-40%, -80%) rotate(-40deg);
+	-webkit-transform: translate(-40%, -80%) rotate(-40deg);
+	transform: translate(-40%, -80%) rotate(-40deg);
+}
+#container .sim_2 .pictures:hover img:nth-child(2) {
+	-ms-transform: translate(-30%, -60%) rotate(-30deg);
+	-webkit-transform: translate(-30%, -60%) rotate(-30deg);
+	transform: translate(-30%, -60%) rotate(-30deg);
+}
+#container .sim_2 .pictures:hover img:nth-child(3) {
+	-ms-transform: translate(-20%, -40%) rotate(-20deg);
+	-webkit-transform: translate(-20%, -40%) rotate(-20deg);
+	transform: translate(-20%, -40%) rotate(-20deg);
+}
+#container .sim_2 .pictures:hover img:nth-child(4) {
+	-ms-transform: translate(-10%, -20%) rotate(-10deg);
+	-webkit-transform: translate(-10%, -20%) rotate(-10deg);
+	transform: translate(-10%, -20%) rotate(-10deg);
+}
+#container .sim_2 .pictures:hover img:nth-child(5) {
+	-ms-transform: scale(1.1, 1.1) rotate(-5deg);
+	-webkit-transform: scale(1.1, 1.1) rotate(-5deg);
+	transform: scale(1.1, 1.1) rotate(-5deg);
+}
+/*第三个*/
+
+#container .sim_3 .pictures:hover img:nth-child(1) {
+	-ms-transform: translate(40%, 80%) rotate(-40deg);
+	-webkit-transform: translate(40%, 80%) rotate(-40deg);
+	transform: translate(40%, 80%) rotate(-40deg);
+}
+#container .sim_3 .pictures:hover img:nth-child(2) {
+	-ms-transform: translate(30%, 60%) rotate(-30deg);
+	-webkit-transform: translate(30%, 60%) rotate(-30deg);
+	transform: translate(30%, 60%) rotate(-30deg);
+}
+#container .sim_3 .pictures:hover img:nth-child(3) {
+	-ms-transform: translate(20%, 40%) rotate(-20deg);
+	-webkit-transform: translate(20%, 40%) rotate(-20deg);
+	transform: translate(20%, 40%) rotate(-20deg);
+}
+#container .sim_3 .pictures:hover img:nth-child(4) {
+	-ms-transform: translate(10%, 20%) rotate(-10deg);
+	-webkit-transform: translate(10%, 20%) rotate(-10deg);
+	transform: translate(10%, 20%) rotate(-10deg);
+}
+#container .sim_3 .pictures:hover img:nth-child(5) {
+	-ms-transform: translate(40%, -80%) rotate(40deg);
+	-webkit-transform: translate(40%, -80%) rotate(40deg);
+	transform: translate(40%, -80%) rotate(40deg);
+}
+#container .sim_3 .pictures:hover img:nth-child(6) {
+	-ms-transform: translate(30%, -60%) rotate(30deg);
+	-webkit-transform: translate(30%, -60%) rotate(30deg);
+	transform: translate(30%, -60%) rotate(30deg);
+}
+#container .sim_3 .pictures:hover img:nth-child(7) {
+	-ms-transform: translate(20%, -40%) rotate(20deg);
+	-webkit-transform: translate(20%, -40%) rotate(20deg);
+	transform: translate(20%, -40%) rotate(20deg);
+}
+#container .sim_3 .pictures:hover img:nth-child(8) {
+	-ms-transform: translate(10%, -20%) rotate(10deg);
+	-webkit-transform: translate(10%, -20%) rotate(10deg);
+	transform: translate(10%, -20%) rotate(10deg);
+}
+#container .sim_3 .pictures:hover img:nth-child(9) {
+	-ms-transform: scale(1.1, 1.1);
+	-webkit-transform: scale(1.1, 1.1);
+	transform: scale(1.1, 1.1);
+}
+/*第四个*/
+
+#container .sim_4 .pictures:hover img:nth-child(1) {
+	-ms-transform: translate(-80%, -160%) rotate(-80deg) scale(0.3, 0.3);
+	-webkit-transform: translate(-80%, -160%) rotate(-80deg) scale(0.3, 0.3);
+	transform: translate(-80%, -160%) rotate(-80deg) scale(0.3, 0.3);
+}
+#container .sim_4 .pictures:hover img:nth-child(2) {
+	-ms-transform: translate(-70%, -140%) rotate(-70deg) scale(0.4, 0.4);
+	-webkit-transform: translate(-70%, -140%) rotate(-70deg) scale(0.4, 0.4);
+	transform: translate(-70%, -140%) rotate(-70deg) scale(0.4, 0.4);
+}
+#container .sim_4 .pictures:hover img:nth-child(3) {
+	-ms-transform: translate(-60%, -120%) rotate(-60deg) scale(0.5, 0.5);
+	-webkit-transform: translate(-60%, -120%) rotate(-60deg) scale(0.5, 0.5);
+	transform: translate(-60%, -120%) rotate(-60deg) scale(0.5, 0.5);
+}
+#container .sim_4 .pictures:hover img:nth-child(4) {
+	-ms-transform: translate(-50%, -100%) rotate(-50deg) scale(0.6, 0.6);
+	-webkit-transform: translate(-50%, -100%) rotate(-50deg) scale(0.6, 0.6);
+	transform: translate(-50%, -100%) rotate(-50deg) scale(0.6, 0.6);
+}
+#container .sim_4 .pictures:hover img:nth-child(5) {
+	-ms-transform: translate(-40%, -80%) rotate(-40deg) scale(0.7, 0.7);
+	-webkit-transform: translate(-40%, -80%) rotate(-40deg) scale(0.7, 0.7);
+	transform: translate(-40%, -80%) rotate(-40deg) scale(0.7, 0.7);
+}
+#container .sim_4 .pictures:hover img:nth-child(6) {
+	-ms-transform: translate(-30%, -60%) rotate(-30deg) scale(0.8, 0.8);
+	-webkit-transform: translate(-30%, -60%) rotate(-30deg) scale(0.8, 0.8);
+	transform: translate(-30%, -60%) rotate(-30deg) scale(0.8, 0.8);
+}
+#container .sim_4 .pictures:hover img:nth-child(7) {
+	-ms-transform: translate(-20%, -40%) rotate(-20deg) scale(0.9, 0.9);
+	-webkit-transform: translate(-20%, -40%) rotate(-20deg) scale(0.9, 0.9);
+	transform: translate(-20%, -40%) rotate(-20deg) scale(0.9, 0.9);
+}
+#container .sim_4 .pictures:hover img:nth-child(8) {
+	-ms-transform: translate(-10%, -20%) rotate(-10deg);
+	-webkit-transform: translate(-10%, -20%) rotate(-10deg);
+	transform: translate(-10%, -20%) rotate(-10deg);
+}
+#container .sim_4 .pictures:hover img:nth-child(9) {
+	-ms-transform: scale(1.1, 1.1);
+	-webkit-transform: scale(1.1, 1.1);
+	transform: scale(1.1, 1.1);
+}
+/*第五个*/
+
+#container .sim_5 .pictures:hover img:nth-child(1) {
+	-ms-transform: translate(0, 50%) rotate(-20deg);
+	-webkit-transform: translate(0, 50%) rotate(-20deg);
+	transform: translate(0, 50%) rotate(-20deg);
+}
+#container .sim_5 .pictures:hover img:nth-child(2) {
+	-ms-transform: translate(50%, 0) rotate(-20deg);
+	-webkit-transform: translate(50%, 0) rotate(-20deg);
+	transform: translate(50%, 0) rotate(-20deg);
+}
+#container .sim_5 .pictures:hover img:nth-child(3) {
+	-ms-transform: translate(0, -50%) rotate(-20deg);
+	-webkit-transform: translate(0, -50%) rotate(-20deg);
+	transform: translate(0, -50%) rotate(-20deg);
+}
+#container .sim_5 .pictures:hover img:nth-child(4) {
+	-ms-transform: translate(-50%, 0) rotate(-20deg);
+	-webkit-transform: translate(-50%, 0) rotate(-20deg);
+	transform: translate(-50%, 0) rotate(-20deg);
+}
+#container .sim_5 .pictures:hover img:nth-child(5) {
+	-ms-transform: scale(1.1, 1.1) rotate(-20deg);
+	-webkit-transform: scale(1.1, 1.1) rotate(-20deg);
+	transform: scale(1.1, 1.1) rotate(-20deg);
+}
+/*第六个*/
+
+#container .sim_6 .pictures:hover img:nth-child(1) {
+	-ms-transform: translate(-20%, -85%) scale(0.8, 0.8) rotate(-20deg);
+	-webkit-transform: translate(-20%, -85%) scale(0.8, 0.8) rotate(-20deg);
+	transform: translate(-20%, -85%) scale(0.8, 0.8) rotate(-20deg);
+}
+#container .sim_6 .pictures:hover img:nth-child(2) {
+	-ms-transform: translate(-80%, 45%) scale(0.8, 0.8) rotate(-20deg);
+	-webkit-transform: translate(-80%, 45%) scale(0.8, 0.8) rotate(-20deg);
+	transform: translate(-80%, 45%) scale(0.8, 0.8) rotate(-20deg);
+}
+#container .sim_6 .pictures:hover img:nth-child(3) {
+	-ms-transform: translate(20%, 85%) scale(0.8, 0.8) rotate(-20deg);
+	-webkit-transform: translate(20%, 85%) scale(0.8, 0.8) rotate(-20deg);
+	transform: translate(20%, 85%) scale(0.8, 0.8) rotate(-20deg);
+}
+#container .sim_6 .pictures:hover img:nth-child(4) {
+	-ms-transform: translate(80%, -45%) scale(0.8, 0.8) rotate(-20deg);
+	-webkit-transform: translate(80%, -45%) scale(0.8, 0.8) rotate(-20deg);
+	transform: translate(80%, -45%) scale(0.8, 0.8) rotate(-20deg);
+}
+#container .sim_6 .pictures:hover img:nth-child(5) {
+	-ms-transform: translate(-100%, -40%) scale(0.8, 0.8) rotate(-20deg);
+	-webkit-transform: translate(-100%, -40%) scale(0.8, 0.8) rotate(-20deg);
+	transform: translate(-100%, -40%) scale(0.8, 0.8) rotate(-20deg);
+}
+#container .sim_6 .pictures:hover img:nth-child(6) {
+	-ms-transform: translate(100%, 40%) scale(0.8, 0.8) rotate(-20deg);
+	-webkit-transform: translate(100%, 40%) scale(0.8, 0.8) rotate(-20deg);
+	transform: translate(100%, 40%) scale(0.8, 0.8) rotate(-20deg);
+}
+#container .sim_6 .pictures:hover img:nth-child(7) {
+	-ms-transform: translate(60%, -130%) scale(0.8, 0.8) rotate(-20deg);
+	-webkit-transform: translate(60%, -130%) scale(0.8, 0.8) rotate(-20deg);
+	transform: translate(60%, -130%) scale(0.8, 0.8) rotate(-20deg);
+}
+#container .sim_6 .pictures:hover img:nth-child(8) {
+	-ms-transform: translate(-60%, 130%) scale(0.8, 0.8) rotate(-20deg);
+	-webkit-transform: translate(-60%, 130%) scale(0.8, 0.8) rotate(-20deg);
+	transform: translate(-60%, 130%) scale(0.8, 0.8) rotate(-20deg);
+}
+#container .sim_6 .pictures:hover img:nth-child(9) {
+	-ms-transform: scale(1.2, 1.2) rotate(-20deg);
+	-webkit-transform: scale(1.2, 1.2) rotate(-20deg);
+	transform: scale(1.2, 1.2) rotate(-20deg);
+}
+/*第七种*/
+
+#container .sim_7 .pictures:hover img:nth-child(1) {
+	-ms-transform: translate(0, -40%) scale(0.5, 0.5);
+	-webkit-transform: translate(0, -40%) scale(0.5, 0.5);
+	transform: translate(0, -40%) scale(0.5, 0.5);
+}
+#container .sim_7 .pictures:hover img:nth-child(2) {
+	-ms-transform: translate(0, -20%) scale(0.7, 0.7);
+	-webkit-transform: translate(0, -20%) scale(0.7, 0.7);
+	transform: translate(0, -20%) scale(0.7, 0.7);
+}
+#container .sim_7 .pictures:hover img:nth-child(3) {
+	-ms-transform: scale(0.9, 0.9);
+	-webkit-transform: scale(0.9, 0.9);
+	transform: scale(0.9, 0.9);
+}
+#container .sim_7 .pictures:hover img:nth-child(4) {
+	-ms-transform: translate(0, 20%) scale(1.1, 1.1);
+	-webkit-transform: translate(0, 20%) scale(1.1, 1.1);
+	transform: translate(0, 20%) scale(1.1, 1.1);
+}
+#container .sim_8 .pictures:hover img:nth-child(1) {
+	-ms-transform: translate(20%, -80%) scale(0.2, 0.2) rotate(-80deg);
+	-webkit-transform: translate(20%, -80%) scale(0.4, 0.2) rotate(-80deg);
+	transform: translate(20%, -80%) scale(0.2, 0.2) rotate(-80deg);
+}
+#container .sim_8 .pictures:hover img:nth-child(2) {
+	-ms-transform: translate(30%, -60%) scale(0.4, 0.4) rotate(-60deg);
+	-webkit-transform: translate(30%, -60%) scale(0.4, 0.4) rotate(-60deg);
+	transform: translate(30%, -60%) scale(0.4, 0.4) rotate(-60deg);
+}
+#container .sim_8 .pictures:hover img:nth-child(3) {
+	-ms-transform: translate(40%, -40%) scale(0.6, 0.6) rotate(-40deg);
+	-webkit-transform: translate(40%, -40%) scale(0.6, 0.6) rotate(-40deg);
+	transform: translate(40%, -40%) scale(0.6, 0.6) rotate(-40deg);
+}
+#container .sim_8 .pictures:hover img:nth-child(4) {
+	-ms-transform: translate(50%, -20%) scale(0.8, 0.8) rotate(-20deg);
+	-webkit-transform: translate(50%, -20%) scale(0.8, 0.8)rotate(-20deg);
+	transform: translate(50%, -20%) scale(0.8, 0.8) rotate(-20deg);
+}
+#container .sim_8 .pictures:hover img:nth-child(5) {
+	-ms-transform: translate(-20%, -80%) scale(0.2, 0.2) rotate(80deg);
+	-webkit-transform: translate(-20%, -80%) scale(0.4, 0.2) rotate(80deg);
+	transform: translate(-20%, -80%) scale(0.2, 0.2) rotate(80deg);
+}
+#container .sim_8 .pictures:hover img:nth-child(6) {
+	-ms-transform: translate(-30%, -60%) scale(0.4, 0.4) rotate(60deg);
+	-webkit-transform: translate(-30%, -60%) scale(0.4, 0.4) rotate(60deg);
+	transform: translate(-30%, -60%) scale(0.4, 0.4) rotate(60deg);
+}
+#container .sim_8 .pictures:hover img:nth-child(7) {
+	-ms-transform: translate(-40%, -40%) scale(0.6, 0.6) rotate(40deg);
+	-webkit-transform: translate(-40%, -40%) scale(0.6, 0.6) rotate(40deg);
+	transform: translate(-40%, -40%) scale(0.6, 0.6) rotate(40deg);
+}
+#container .sim_8 .pictures:hover img:nth-child(8) {
+	-ms-transform: translate(-50%, -20%) scale(0.8, 0.8) rotate(20deg);
+	-webkit-transform: translate(-50%, -20%) scale(0.8, 0.8) rotate(20deg);
+	transform: translate(-50%, -20%) scale(0.8, 0.8) rotate(20deg);
+}
+#container .sim_8 .pictures:hover img:nth-child(9) {
+	-ms-transform: translate(0, 20%) scale(1.1, 1.1);
+	-webkit-transform: translate(0, 20%) scale(1.1, 1.1);
+	transform: translate(0, 20%) scale(1.1, 1.1);
+}
+/*第九个*/
+
+#container .sim_9 .pictures:hover img:nth-child(1) {
+	-ms-transform: translate(0, 75%) scale(0.7, 0.7) rotateX(10deg);
+	-webkit-transform: translate(0, 75%) scale(0.7, 0.7) rotateX(10deg);
+	transform: translate(0, 75%) scale(0.7, 0.7) rotateX(10deg);
+}
+#container .sim_9 .pictures:hover img:nth-child(2) {
+	-ms-transform: translate(72%, 75%) scale(0.7, 0.7) rotateX(10deg);
+	-webkit-transform: translate(72%, 75%) scale(0.7, 0.7) rotateX(10deg);
+	transform: translate(72%, 75%) scale(0.7, 0.7) rotateX(10deg);
+}
+#container .sim_9 .pictures:hover img:nth-child(3) {
+	-ms-transform: translate(-72%, 75%) scale(0.7, 0.7) rotateX(10deg);
+	-webkit-transform: translate(-72%, 75%) scale(0.7, 0.7) rotateX(10deg);
+	transform: translate(-72%, 75%) scale(0.7, 0.7) rotateX(10deg);
+}
+#container .sim_9 .pictures:hover img:nth-child(4) {
+	-ms-transform: translate(-72%, 0) scale(0.7, 0.7) rotateX(10deg);
+	-webkit-transform: translate(-72%, 0) scale(0.7, 0.7) rotateX(10deg);
+	transform: translate(-72%, 0) scale(0.7, 0.7) rotateX(10deg);
+}
+#container .sim_9 .pictures:hover img:nth-child(5) {
+	-ms-transform: translate(72%, 0) scale(0.7, 0.7) rotateX(10deg);
+	-webkit-transform: translate(72%, 0) scale(0.7, 0.7) rotateX(10deg);
+	transform: translate(72%, 0) scale(0.7, 0.7) rotateX(10deg);
+}
+#container .sim_9 .pictures:hover img:nth-child(6) {
+	-ms-transform: translate(72%, -70%) scale(0.7, 0.7) rotateX(10deg);
+	-webkit-transform: translate(72%, -70%) scale(0.7, 0.7) rotateX(10deg);
+	transform: translate(72%, -70%) scale(0.7, 0.7) rotateX(10deg);
+}
+#container .sim_9 .pictures:hover img:nth-child(7) {
+	-ms-transform: translate(-72%, -70%) scale(0.7, 0.7) rotateX(10deg);
+	-webkit-transform: translate(-72%, -70%) scale(0.7, 0.7) rotateX(10deg);
+	transform: translate(-72%, -70%) scale(0.7, 0.7) rotateX(10deg);
+}
+#container .sim_9 .pictures:hover img:nth-child(8) {
+	-ms-transform: translate(0, -70%) scale(0.7, 0.7) rotateX(10deg);
+	-webkit-transform: translate(0, -70%) scale(0.7, 0.7) rotateX(10deg);
+	transform: translate(0, -70%) scale(0.7, 0.7) rotateX(10deg);
+}
+#container .sim_9 .pictures:hover img:nth-child(9) {
+	-ms-transform: scale(0.7, 0.7) rotateX(10deg);
+	-webkit-transform: scale(0.7, 0.7) rotateX(10deg);
+	transform: scale(0.7, 0.7) rotateX(10deg);
+}
