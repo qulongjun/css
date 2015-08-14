@@ -1,0 +1,55 @@
+.load {
+	height: 24px;
+	background: #f2f2f2;
+	overflow: hidden;
+	margin: 15px 0px;
+	width: 100%;
+	border-radius: 3px;
+	box-shadow: inset 0 1px 2px #d5d6d6;
+}
+.load .per {
+	background: #d5d6d6;
+	height: 24px;
+	text-align: center;
+	color: #fff;
+	line-height: 24px;
+	float: left;
+}
+.load .per.c1 {
+	background: #d5d6d6;
+}
+.load .per.c2 {
+	background: #435a71;
+}
+.load .per.c3 {
+	background: #d9534f;
+}
+.load .per.c4 {
+	background: #8524ae;
+}
+.load .per.c5 {
+	background: #2c7eb4;
+}
+.load .per.c6 {
+	background: #2ab89b;
+}
+.load .per.c7 {
+	background: #f19a4c;
+}
+.load .per.c8 {
+	background: #fb7fbf;
+}
+.load .per.animation {
+	background-image: linear-gradient(135deg, rgba(255, 255, 255, .15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .15) 50%, rgba(255, 255, 255, .15) 75%, transparent 75%, transparent);
+	background-size: 40px 40px;
+	-webkit-animation: per-animation 1.5s linear infinite;
+	transition: width .6s ease;
+}
+@-webkit-keyframes per-animation {
+	from {
+		background-position: 40px 0
+	}
+	to {
+		background-position: 0 0
+	}
+}
